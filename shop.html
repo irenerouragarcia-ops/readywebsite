@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Irene Roura García</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="lang-en page-sub page-bg-forest bg-pos-top">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo_main.png" alt="Irene Roura García">
+        </a>
+        <div class="nav-actions">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="divider">|</span>
+                <button class="lang-btn" data-lang="es">ES</button>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="sessions.html" data-i18n="nav.sessions">Sessions</a></li>
+            <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="shop.html" class="active" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="organic-container top-pad">
+        <section class="organic-section center-align">
+
+            <div class="content-glass wide">
+
+                <h1 data-i18n="shop.title">Shop</h1>
+                <div id='collection-component-1768504421958'></div>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+                    (function () {
+                        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                        if (window.ShopifyBuy) {
+                            if (window.ShopifyBuy.UI) {
+                                ShopifyBuyInit();
+                            } else {
+                                loadScript();
+                            }
+                        } else {
+                            loadScript();
+                        }
+                        function loadScript() {
+                            var script = document.createElement('script');
+                            script.async = true;
+                            script.src = scriptURL;
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                            script.onload = ShopifyBuyInit;
+                        }
+                        function ShopifyBuyInit() {
+                            var client = ShopifyBuy.buildClient({
+                                domain: '4g5stb-ja.myshopify.com',
+                                storefrontAccessToken: '3b9ebf9b58be159f856a3cc6a2c5ac98',
+                            });
+                            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                ui.createComponent('collection', {
+                                    id: '565564244234',
+                                    node: document.getElementById('collection-component-1768504421958'),
+                                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                                    options: {
+                                        "product": {
+                                            "styles": {
+                                                "product": {
+                                                    "@media (min-width: 601px)": {
+                                                        "max-width": "calc(25% - 20px)",
+                                                        "margin-left": "20px",
+                                                        "margin-bottom": "50px",
+                                                        "width": "calc(25% - 20px)"
+                                                    },
+                                                    "img": {
+                                                        "height": "calc(100% - 15px)",
+                                                        "position": "absolute",
+                                                        "left": "0",
+                                                        "right": "0",
+                                                        "top": "0"
+                                                    },
+                                                    "imgWrapper": {
+                                                        "padding-top": "calc(75% + 15px)",
+                                                        "position": "relative",
+                                                        "height": "0"
+                                                    }
+                                                },
+                                                "button": {
+                                                    ":hover": {
+                                                        "background-color": "#276815"
+                                                    },
+                                                    "background-color": "#2b7417",
+                                                    ":focus": {
+                                                        "background-color": "#276815"
+                                                    }
+                                                }
+                                            },
+                                            "text": {
+                                                "button": "Add to cart"
+                                            }
+                                        },
+                                        "productSet": {
+                                            "styles": {
+                                                "products": {
+                                                    "@media (min-width: 601px)": {
+                                                        "margin-left": "-20px"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "modalProduct": {
+                                            "contents": {
+                                                "img": false,
+                                                "imgWithCarousel": true,
+                                                "button": false,
+                                                "buttonWithQuantity": true
+                                            },
+                                            "styles": {
+                                                "product": {
+                                                    "@media (min-width: 601px)": {
+                                                        "max-width": "100%",
+                                                        "margin-left": "0px",
+                                                        "margin-bottom": "0px"
+                                                    }
+                                                },
+                                                "button": {
+                                                    ":hover": {
+                                                        "background-color": "#276815"
+                                                    },
+                                                    "background-color": "#2b7417",
+                                                    ":focus": {
+                                                        "background-color": "#276815"
+                                                    }
+                                                }
+                                            },
+                                            "text": {
+                                                "button": "Add to cart"
+                                            }
+                                        },
+                                        "option": {},
+                                        "cart": {
+                                            "styles": {
+                                                "button": {
+                                                    ":hover": {
+                                                        "background-color": "#276815"
+                                                    },
+                                                    "background-color": "#2b7417",
+                                                    ":focus": {
+                                                        "background-color": "#276815"
+                                                    }
+                                                }
+                                            },
+                                            "text": {
+                                                "total": "Subtotal",
+                                                "button": "Checkout"
+                                            }
+                                        },
+                                        "toggle": {
+                                            "styles": {
+                                                "toggle": {
+                                                    "background-color": "#2b7417",
+                                                    ":hover": {
+                                                        "background-color": "#276815"
+                                                    },
+                                                    ":focus": {
+                                                        "background-color": "#276815"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                });
+                            });
+                        }
+                    })();
+                    /*]]>*/
+                </script>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal (Copied from index) -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+
+        <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
