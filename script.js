@@ -7,7 +7,7 @@ const translations = {
         hero: {
             title: "Irene Roura García",
             subtitle: "Nurse · Wellbeing Coach · Hypnotherapist · FND Specialist",
-            quote: "\"The art of honoring what you need, with respect and without guilt.\"",
+         
             cta: "Free Consultation"
         },
         about: {
@@ -80,7 +80,7 @@ const translations = {
         hero: {
             title: "Irene Roura García",
             subtitle: "Enfermera · Coach de Bienestar · Hipnoterapeuta · Especialista TNF",
-            quote: "\"El arte de honrar lo que necesitas, con respeto y sin culpa.\"",
+       
             cta: "Consulta Gratuita"
         },
         about: {
