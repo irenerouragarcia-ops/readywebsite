@@ -11,8 +11,7 @@ const translations = {
             cta: "Free Consultation"
         },
         about: {
-            full_text: "<p>I am a nurse specialized in mental health, hypnotherapist, wellbeing coach, and Functional Neurological Disorder (FND) specialist. I have worked as a nurse at NHS mental health, neurology, and neuropsychiatry wards. I spent four years working on an inpatient neuropsychiatric ward supporting people living with FND, where I first encountered the condition and developed a strong commitment to support people living with it.</p><p>From early in my training, I was drawn to approaches that support the mind–body connection and nervous system regulation. I now integrate my clinical experience with hypnotherapy, mindfulness, and polyvagal theory–informed practices. I believe meaningful and lasting change comes from a holistic approach and from focusing on practical, helpful steps that can be adapted to each person’s circumstances.</p><p>Today, I collaborate with FND charities to deliver educational courses and provide one-to-one support for people living with FND worldwide. I am also about to publish a book in collaboration with lived experience of FND and I am a member of the <a href="https://ukfndnetwork.org/" target="_blank" style="color: blue;">FND UK Network</a>
-, where I represent the Royal College of Nursing.</p>"
+            full_text: "<p>I am a nurse specialized in mental health, hypnotherapist, wellbeing coach, and Functional Neurological Disorder (FND) specialist. I have worked as a nurse at NHS mental health, neurology, and neuropsychiatry wards. I spent five years working on an inpatient neuropsychiatric ward supporting people living with FND, where I first encountered the condition and developed a strong commitment to support people living with it.</p><p>From early in my training, I was drawn to approaches that support the mind–body connection and nervous system regulation. I now integrate my clinical experience with hypnotherapy, mindfulness, and polyvagal theory–informed practices. I believe meaningful and lasting change comes from a holistic approach and from focusing on practical, helpful steps that can be adapted to each person’s circumstances.</p><p>Today, I collaborate with FND charities to deliver courses, I  offer one-to-one sessions and run programs for people living with FND worldwide. I am also about to publish a book in collaboration with people with lived experience, and I am a member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" class=\"highlight-link\">FND UK Network</a>, where I represent the Royal College of Nursing.</p>"
         },
         sessions: {
             title: "Sessions",
@@ -49,6 +48,7 @@ const translations = {
             item1: "FND Useful Links",
             item2: "Grounding Exercise",
             item3: "FND Care Whatsapp Group",
+            item4: "Personalized Hypnotherapy Audio",
             more_coming: "More resources coming up soon",
             viz_title: "FND Keywords and Concepts",
             view_btn: "View Link",
@@ -85,8 +85,7 @@ const translations = {
         },
         about: {
             title: "Sobre Mí",
-            full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). Mi experiencia profesional incluye salud mental, neurología y neuropsiquiatría dentro del NHS (sistema público de salud en Inglaterra). Trabajé durante cuatro años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF donde conocí esta condición por primera vez y desarrollé un fuerte compromiso en apoyar a las personas que lo sufren.</p><p>Desde el inicio de mi formación, me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Actualmente combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge a través de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias de cada persona.</p><p>En la actualidad, colaboro con organizaciones benéficas de TNF impartiendo cursos y también ofrezco programas y sesiones individuales (todo online). Estoy a punto de publicar un libro en colaboración con personas con experiencia vivida de TNF \"FND Care Guide\" y soy miembro de la Red de TNF de Reino Unido <a href="https://ukfndnetwork.org/" target="_blank" style="color: blue;">FND UK Network</a>
-, donde represento la profesión de enfermería.</p>"
+            full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). Mi experiencia profesional incluye salud mental, neurología y neuropsiquiatría dentro del NHS (sistema público de salud en Inglaterra). Trabajé durante cinco años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF donde conocí esta condición por primera vez y desarrollé un fuerte compromiso en apoyar a las personas que lo sufren.</p><p>Desde el inicio de mi formación, me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Actualmente combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge a través de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias de cada persona.</p><p>En la actualidad, colaboro con organizaciones benéficas de TNF impartiendo cursos y también ofrezco programas y sesiones individuales (todo online). Estoy a punto de publicar un libro en colaboración con personas con experiencia vivida de TNF \"FND Care Guide\" y soy miembro de la Red de TNF de Reino Unido (<a href=\"https://ukfndnetwork.org/\" target=\"_blank\" class=\"highlight-link\">FND UK Network</a>), donde represento la profesión de enfermería.</p>"
         },
         sessions: {
             title: "Sesiones",
@@ -123,6 +122,7 @@ const translations = {
             item1: "Enlaces FND útiles",
             item2: "Ejercicio de Grounding",
             item3: "Grupo de WhatsApp FND Care",
+            item4: "Audio de Hipnoterapia Personalizada",
             more_coming: "Más recursos próximamente",
             viz_title: "Palabras clave y conceptos - Visualización Interactiva",
             view_btn: "Ver enlace",
@@ -278,7 +278,6 @@ const testimonials = [
 
 let sliderInterval;
 let currentSlide = 0;
-let isAnimating = false;
 
 function initTestimonialSlider() {
     const track = document.querySelector('.testimonial-track');
@@ -328,11 +327,9 @@ function renderSlides() {
 }
 
 function moveSlide(direction) {
-    if (isAnimating) return;
     const slides = document.querySelectorAll('.testimonial-slide');
     if (slides.length === 0) return;
 
-    isAnimating = true;
     const current = slides[currentSlide];
 
     // Fade out
@@ -345,7 +342,6 @@ function moveSlide(direction) {
         currentSlide = (currentSlide + direction + slides.length) % slides.length;
 
         slides[currentSlide].classList.add('active');
-        isAnimating = false;
     }, 1000); // Wait 1s (match CSS animation)
 }
 
@@ -490,6 +486,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Keyboard support for Menu Toggle
+    if (menuToggle) {
+        menuToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                menuToggle.click(); // Reuse click handler
+            }
+        });
+    }
 });
 
 // --- 5. Session Options Toggle ---
@@ -511,6 +517,14 @@ function initSessionTextToggles() {
             e.stopPropagation(); // Prevent bubbling if needed
             // Close others? Optional. For now let's just toggle this one.
             group.classList.toggle('fixed-active');
+        });
+
+        // Add keyboard support
+        trigger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                group.classList.toggle('fixed-active');
+            }
         });
     });
 
