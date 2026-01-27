@@ -7,7 +7,6 @@ const translations = {
         hero: {
             title: "Irene Roura García",
             subtitle: "Nurse · Wellbeing Coach · Hypnotherapist · FND Specialist",
-         
             cta: "Free Consultation"
         },
         about: {
@@ -80,7 +79,6 @@ const translations = {
         hero: {
             title: "Irene Roura García",
             subtitle: "Enfermera · Coach de Bienestar · Hipnoterapeuta · Especialista TNF",
-       
             cta: "Consulta Gratuita"
         },
         about: {
@@ -514,8 +512,15 @@ function initSessionTextToggles() {
 
         // Click to toggle "fixed" state
         trigger.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent bubbling if needed
-            // Close others? Optional. For now let's just toggle this one.
+            e.stopPropagation();
+
+            // Accordion behavior: Close others first
+            document.querySelectorAll('.session-text-group.fixed-active').forEach(el => {
+                if (el !== group) {
+                    el.classList.remove('fixed-active');
+                }
+            });
+
             group.classList.toggle('fixed-active');
         });
 

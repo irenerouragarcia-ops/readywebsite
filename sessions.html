@@ -23,11 +23,10 @@
                 <span class="divider">|</span>
                 <button class="lang-btn" data-lang="es">ES</button>
             </div>
-        </div>
-        <div class="menu-toggle" id="menuToggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <ul class="nav-links">
             <li><a href="about.html" data-i18n="nav.about">About</a></li>
@@ -48,7 +47,8 @@
 
                 <div class="text-content session-titles-row">
                     <div class="session-text-group">
-                        <h3 data-i18n="sessions.offer1_title" class="session-text-trigger">Wellbeing Coaching</h3>
+                        <h3 data-i18n="sessions.offer1_title" class="session-text-trigger" role="button" tabindex="0">
+                            Wellbeing Coaching</h3>
                         <div class="session-reveal-text">
                             <p data-i18n="sessions.offer1_text">Personalised sessions designed to support your wellbeing
                                 and management of symptoms, using practical, sustainable tools from mindfulness, CBT,
@@ -58,7 +58,8 @@
                     </div>
 
                     <div class="session-text-group">
-                        <h3 data-i18n="sessions.offer2_title" class="session-text-trigger">Hypnotherapy</h3>
+                        <h3 data-i18n="sessions.offer2_title" class="session-text-trigger" role="button" tabindex="0">
+                            Hypnotherapy</h3>
                         <div class="session-reveal-text">
                             <p data-i18n="sessions.offer2_text">Subconscious-focused work (similar to relaxation)
                                 to reframe unhelpful patterns and support long-standing conditions and associated
@@ -69,7 +70,8 @@
                     </div>
 
                     <div class="session-text-group">
-                        <h3 data-i18n="sessions.offer3_title" class="session-text-trigger">FND Support</h3>
+                        <h3 data-i18n="sessions.offer3_title" class="session-text-trigger" role="button" tabindex="0">
+                            FND Support</h3>
                         <div class="session-reveal-text">
                             <p data-i18n="sessions.offer3_text">Specialist guidance for people living with Functional
                                 Neurological Disorder. Support focused on understanding your symptoms, building
@@ -84,7 +86,8 @@
                 <!-- New Session Options Grid -->
                 <div class="session-options-grid">
                     <div class="session-option-card">
-                        <div class="option-header" onclick="toggleSessionOption(this)">
+                        <div class="option-header" onclick="toggleSessionOption(this)" role="button" tabindex="0"
+                            onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleSessionOption(this); }">
                             <div class="header-content">
                                 <div class="card-icon-frame small-icon"></div>
                                 <h3 data-i18n="sessions.opt1_title">1:1 Sessions</h3>
@@ -135,7 +138,8 @@
                     </div>
 
                     <div class="session-option-card">
-                        <div class="option-header" onclick="toggleSessionOption(this)">
+                        <div class="option-header" onclick="toggleSessionOption(this)" role="button" tabindex="0"
+                            onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleSessionOption(this); }">
                             <div class="header-content">
                                 <div class="card-icon-frame small-icon"></div>
                                 <h3 data-i18n="sessions.opt2_title">Group sessions / Programs</h3>
@@ -175,10 +179,7 @@
         </section>
 
         <!-- Stock Image Section -->
-        <div class="visual-break">
-            <img src="https://images.unsplash.com/photo-1596131397999-d2b405395779?q=80&w=2608&auto=format&fit=crop"
-                alt="Calm Therapy Room">
-        </div>
+
     </main>
 
     <!-- Modal (Copied from index) -->
