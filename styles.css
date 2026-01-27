@@ -265,17 +265,6 @@ footer {
     display: inline-block;
 }
 
-.hero-quote {
-    font-style: italic;
-    font-size: 1.2rem;
-    color: var(--color-text-primary);
-    max-width: 800px;
-    /* Constrain the quote width reasonably */
-    margin: 0 auto 5rem;
-    /* Increased spacing below quote */
-    opacity: 0.8;
-}
-
 
 
 /* --- Home: Nav Dock (Inside Hero) --- */
