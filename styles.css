@@ -1507,3 +1507,831 @@ a.resource-card:hover {
     width: 18px;
     height: 18px;
 }
+
+/* ==========================================================================
+   v8 additions — Jul 2026 update (homepage cards, results page, book page,
+   sessions polish, support strip, signup band). Reuses existing tokens only.
+   ========================================================================== */
+
+/* --- Homepage: value prop + static quote cards + CTA row --- */
+.hero-valueprop {
+    max-width: 620px;
+    margin: 0.8rem auto 0;
+    font-size: 1.02rem;
+    color: var(--color-text-secondary);
+}
+
+.quote-cards {
+    max-width: 860px;
+    margin: var(--phi-1) auto;
+}
+
+.quote-cards-header {
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.8rem;
+}
+
+.quote-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.quote-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1.4rem 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.quote-card blockquote {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.02rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.7rem;
+}
+
+.quote-card blockquote::before {
+    content: "\201C";
+}
+
+.quote-card blockquote::after {
+    content: "\201D";
+}
+
+.quote-card figcaption {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+.quote-cards-more {
+    display: inline-block;
+    margin-top: 0.9rem;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.evidence-disclaimer {
+    font-size: 0.72rem;
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 0.9rem auto 0;
+}
+
+.hero-cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.hero-secondary-link {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 2px;
+}
+
+@media (max-width: 760px) {
+    .quote-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Support strip (Patreon + professionals) & signup band --- */
+.support-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    max-width: 960px;
+    margin: var(--phi-2) auto var(--phi-1);
+    padding: 0 1.2rem;
+}
+
+.support-block {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1.6rem 1.7rem;
+    text-align: center;
+}
+
+.support-block h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+.support-block p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.support-btn {
+    font-size: 0.9rem;
+}
+
+.support-link {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 2px;
+}
+
+.signup-band {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    background: var(--color-accent-light);
+    padding: 1.3rem 1.2rem;
+    text-align: center;
+}
+
+.signup-band p {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.signup-btn {
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+    .support-strip {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Sessions polish --- */
+.session-intro {
+    max-width: 680px;
+    margin: 0 auto var(--phi-1);
+}
+
+.session-text-group .session-text-trigger {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 0.9rem 1.2rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.session-text-group .session-text-trigger:hover {
+    box-shadow: 0 12px 44px rgba(10, 75, 72, 0.12);
+    transform: translateY(-2px);
+}
+
+.price-item .item-price {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+}
+
+.session-quote {
+    border-left: 3px solid var(--color-accent);
+    background: rgba(224, 236, 238, 0.45);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0 0.2rem;
+    text-align: left;
+}
+
+.session-quote blockquote {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 0.92rem;
+    margin: 0 0 0.4rem;
+}
+
+.session-quote figcaption {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.trust-line {
+    margin: var(--phi-1) auto 0.6rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    max-width: 640px;
+}
+
+.trust-line a {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* --- Results page --- */
+.results-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: var(--phi-1) 0;
+}
+
+.stat-tile {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1.1rem 0.9rem;
+    text-align: center;
+}
+
+.stat-tile .stat-value {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    color: var(--color-text-primary);
+    display: block;
+}
+
+.stat-tile .stat-caption {
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    line-height: 1.45;
+}
+
+.results-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: var(--phi-1) 0;
+}
+
+.filter-btn {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--color-text-primary);
+    background: var(--glass-bg);
+    border: 1px solid var(--color-accent-light);
+    border-radius: 50px;
+    padding: 0.45rem 1.1rem;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.filter-btn[aria-pressed="true"] {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: left;
+}
+
+.result-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1.3rem 1.4rem;
+    margin: 0;
+}
+
+.result-card blockquote {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 0.98rem;
+    margin: 0 0 0.6rem;
+}
+
+.result-card figcaption {
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.result-card .service-tag {
+    background: var(--color-accent-light);
+    color: var(--color-text-primary);
+    border-radius: 50px;
+    padding: 0.1rem 0.7rem;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 860px) {
+    .results-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- About page additions --- */
+.credentials-list {
+    list-style: none;
+    margin: 0.6rem 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+.credentials-list li {
+    padding: 0.45rem 0 0.45rem 1.7rem;
+    position: relative;
+    font-size: 0.94rem;
+}
+
+.credentials-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0.2rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.about-pullquote {
+    border-left: 3px solid var(--color-accent);
+    background: rgba(224, 236, 238, 0.45);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+    padding: 1rem 1.2rem;
+    margin: var(--phi-1) 0;
+    text-align: left;
+}
+
+.about-pullquote blockquote {
+    font-family: var(--font-heading);
+    font-style: italic;
+    margin: 0 0 0.4rem;
+}
+
+.about-pullquote figcaption {
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+}
+
+.cta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: var(--phi-1);
+}
+
+.cta-row .secondary-link {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 2px;
+}
+
+/* --- Book page --- */
+.book-layout {
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    gap: var(--phi-1);
+    align-items: start;
+    text-align: left;
+}
+
+.book-cover {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 14px 40px rgba(10, 75, 72, 0.18);
+}
+
+.book-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0;
+}
+
+.book-features-list li {
+    padding: 0.4rem 0 0.4rem 1.7rem;
+    position: relative;
+    font-size: 0.94rem;
+}
+
+.book-features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0.2rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.book-buy-note {
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.5rem;
+}
+
+.reviews-empty {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+@media (max-width: 760px) {
+    .book-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .book-cover {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
+
+/* --- Calm by default: respect reduced motion across all v8 components --- */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* --- July 2026 update request: sliders, stacked support strip, book layout, session packages --- */
+
+/* Testimonial slider box (home, about, book) */
+.testimonial-box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1.3rem 1.1rem;
+}
+
+.testimonial-box .testimonial-track-container {
+    min-height: 110px;
+}
+
+.testimonial-slide .slide-attr {
+    display: block;
+    margin-top: 0.6rem;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+/* Support strip stacked: Patreon on top, small Collaboration box below, then consultation CTA */
+.support-strip.stacked {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    justify-items: center;
+}
+
+.support-strip.stacked .support-block {
+    width: 100%;
+}
+
+.support-block.compact {
+    max-width: 480px;
+    padding: 1.1rem 1.4rem;
+}
+
+.support-block.compact h3 {
+    font-size: 1.05rem;
+}
+
+.support-block.compact p {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+}
+
+.home-consult-cta {
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+/* Book page: wider gap between cover and text, "Who it's for" under the cover */
+.book-layout {
+    column-gap: 3.2rem;
+}
+
+.book-layout h2 {
+    margin-top: 1.4rem;
+}
+
+/* Sessions: package group titles and feature lists */
+.package-group-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    margin: 0.9rem 0 0.2rem;
+    color: var(--color-text-primary);
+    text-align: left;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0.5rem;
+    text-align: left;
+}
+
+.package-features li {
+    padding: 0.3rem 0 0.3rem 1.6rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.package-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0.2rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+/* Sessions: Patreon community intro inside the group card */
+.community-patreon {
+    text-align: center;
+    padding: 0.4rem 0 0.8rem;
+}
+
+.community-patreon p {
+    font-size: 0.92rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.7rem;
+}
+
+/* Hero fit fix: never clip the title behind the navbar (Irene's July 2026 request).
+   The hero grows with its content instead of overflowing a fixed 85vh box. */
+.hero {
+    height: auto;
+    min-height: 85vh;
+    padding-top: 7rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 8rem;
+    }
+
+    .hero-title {
+        margin-bottom: 1.6rem;
+    }
+}
+
+/* --- July 2026 update request, round 2 --- */
+
+/* "Testimonials" label: easier to see against the hero photo */
+.quote-cards-header {
+    font-weight: 700;
+    color: var(--color-text-primary);
+    background: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border-radius: 10px;
+}
+
+/* Less space between the subtitle box and the testimonials */
+.hero-subtitle {
+    margin-bottom: 1.6rem;
+}
+
+/* FND Care Guide button below the hero, with logo */
+.guide-cta-band {
+    text-align: center;
+    margin: 1.6rem auto 0.4rem;
+    padding: 0 1.2rem;
+}
+
+.guide-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.05rem;
+}
+
+.guide-cta-logo {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+/* Floating consultation chat bubble, top right under the navbar */
+.consult-fab {
+    position: fixed;
+    top: 105px;
+    right: 18px;
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(10, 75, 72, 0.35);
+    text-decoration: none;
+    transition: width 0.25s ease, border-radius 0.25s ease, transform 0.2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.consult-fab svg {
+    flex-shrink: 0;
+}
+
+.consult-fab .consult-fab-label {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: max-width 0.25s ease, opacity 0.25s ease, margin 0.25s ease;
+}
+
+.consult-fab:hover,
+.consult-fab:focus-visible {
+    width: auto;
+    border-radius: 30px;
+    padding: 0 1.1rem;
+    transform: translateY(-2px);
+}
+
+.consult-fab:hover .consult-fab-label,
+.consult-fab:focus-visible .consult-fab-label {
+    max-width: 160px;
+    opacity: 1;
+    margin-left: 0.5rem;
+}
+
+/* Session quotes wrapped in quotation marks */
+.session-quote blockquote::before {
+    content: "\201C";
+}
+
+.session-quote blockquote::after {
+    content: "\201D";
+}
+
+/* Book Reviews centered in the middle of the page */
+.book-reviews-center {
+    max-width: 700px;
+    margin: var(--phi-1) auto 0;
+    text-align: center;
+}
+
+/* --- July 2026 update request, round 3 --- */
+
+/* Language-scoped helper (used inside the audio popup) */
+.lang-en .lang-es-only { display: none; }
+.lang-es .lang-en-only { display: none; }
+
+/* "Testimonials" label: bold text, no box */
+.quote-cards-header {
+    background: none;
+    padding: 0;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95), 0 0 18px rgba(255, 255, 255, 0.8);
+}
+
+/* Patreon block inside Group Sessions & Courses card */
+.patreon-here-btn {
+    font-size: 0.78rem;
+    padding: 0.45rem 1.2rem;
+    display: inline-block;
+    margin: 0.1rem 0 0.9rem;
+}
+
+.community-patreon p + p {
+    margin-top: 0.4rem;
+}
+
+/* Contact cards: 2 and 2, centered */
+.contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 560px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Card 4: Collaboration — its own slice of the logo (lower right) */
+.contact-card:nth-child(4) .card-icon-frame {
+    background-size: 260%;
+    background-position: 85% 80%;
+}
+
+/* Relaxation audio popup form */
+.audio-modal-content h2 {
+    margin-bottom: 1.2rem;
+    font-family: var(--font-heading);
+}
+
+#audioSignupForm label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+#audioSignupForm input[type="email"],
+#audioSignupForm select {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid rgba(10, 75, 72, 0.25);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: #fff;
+}
+
+#audioSignupForm .audio-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-size: 0.85rem;
+}
+
+#audioSignupForm .audio-consent input {
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+#audioSignupForm button[type="submit"] {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* --- July 2026 update request, round 4 --- */
+
+/* "Testimonials" header centered (about page; home/book already centered) */
+.quote-cards {
+    text-align: center;
+}
+
+/* Patreon logo link inside Group Sessions & Courses card */
+.patreon-logo-link {
+    display: inline-block;
+    margin: 0.3rem 0 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.patreon-logo-link img {
+    height: 46px;
+    width: auto;
+    display: block;
+}
+
+.patreon-logo-link:hover {
+    transform: scale(1.08);
+}
+
+/* --- July 2026 update request, round 5 --- */
+
+/* About page: breathing room above the section headings */
+.page-about .text-content h2 {
+    margin-top: 2.4rem;
+}
+
+/* --- July 2026 update request, round 6 --- */
+.family-pack-line {
+    text-align: left;
+    font-size: 0.95rem;
+    margin: 0.2rem 0 0.6rem;
+}
+
+.community-patreon .session-quote {
+    text-align: left;
+}

@@ -4,13 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene Roura García | Mental Health & Wellbeing</title>
+    <title>Irene Roura García | FND Specialist Nurse, Wellbeing Coach & Hypnotherapist</title>
+    <meta name="description"
+        content="Specialist support for people living with FND — 1:1 sessions, group programs in English and Spanish, hypnotherapy, and the FND Care Guide book.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Irene Roura García | FND Specialist Nurse, Wellbeing Coach & Hypnotherapist">
+    <meta property="og:description"
+        content="Specialist support for people living with FND — 1:1 sessions, group programs in EN & ES, hypnotherapy, and the FND Care Guide book.">
+    <meta property="og:url" content="https://irenerouragarcia.com/">
+    <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Irene Roura García",
+          "url": "https://irenerouragarcia.com/",
+          "image": "https://irenerouragarcia.com/irene_portrait.png",
+          "jobTitle": "FND Specialist Nurse, Wellbeing Coach & Hypnotherapist",
+          "knowsLanguage": ["en", "es", "pt"],
+          "sameAs": [
+            "https://www.instagram.com/irenerouragarcia/",
+            "https://fndcareguide.com",
+            "https://www.patreon.com/cw/IreneRouraGarcia"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Irene Roura García — FND Support",
+          "url": "https://irenerouragarcia.com/",
+          "description": "Specialist wellbeing coaching, hypnotherapy and group programs for people living with Functional Neurological Disorder (FND), in English and Spanish.",
+          "availableLanguage": ["English", "Spanish"]
+        }
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=15">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -35,7 +71,9 @@
         <ul class="nav-links">
             <li><a href="about.html" data-i18n="nav.about">About</a></li>
             <li><a href="sessions.html" data-i18n="nav.sessions">Sessions</a></li>
+            <li><a href="results.html" data-i18n="nav.results">Testimonials</a></li>
             <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="book.html" data-i18n="nav.book">Book</a></li>
             <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -52,22 +90,17 @@
             <p class="hero-subtitle" data-i18n="hero.subtitle">Nurse · Wellbeing Coach · Hypnotherapist · FND Specialist
             </p>
 
-            <div class="testimonial-slider-container">
-                <div class="testimonial-header">Testimonials</div>
-                <div class="testimonial-slider">
-                    <button class="slider-arrow prev" data-action="prev">❮</button>
+            <div class="quote-cards" aria-label="Testimonials">
+                <div class="quote-cards-header" data-i18n="home.quotes_title">Testimonials</div>
+                <div class="testimonial-box">
+                    <button class="slider-arrow prev" aria-label="Previous testimonial">‹</button>
                     <div class="testimonial-track-container">
-                        <div class="testimonial-track">
-                            <!-- Slides -->
-                        </div>
+                        <div class="testimonial-track" data-source="home"></div>
                     </div>
-                    <button class="slider-arrow next" data-action="next">❯</button>
+                    <button class="slider-arrow next" aria-label="Next testimonial">›</button>
                 </div>
+                <a href="results.html" class="quote-cards-more" data-i18n="hero.stories_link">Read more →</a>
             </div>
-
-
-            <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary"
-                target="_blank" data-i18n="hero.cta">Free Consultation</a>
         </div>
 
         <!-- Navigation Cards (Dock Inside Hero) -->
@@ -110,12 +143,117 @@
         </div>
     </header>
 
+    <!-- FND Care Guide button below the hero, with the bottom logo (July 2026 request) -->
+    <section class="guide-cta-band" aria-label="FND Care Guide">
+        <a href="https://fndcareguide.com" target="_blank" rel="noopener" class="btn-primary guide-cta-btn">
+            <img src="logo_hero_bottom.png" alt="" class="guide-cta-logo">
+            <span data-i18n="hero.tools_link">FND Care Guide</span>
+            <img src="logo_hero_bottom.png" alt="" class="guide-cta-logo">
+        </a>
+    </section>
+
+    <!-- Collaboration box (Patreon box removed per Irene's July 2026 request) -->
+    <section class="support-strip stacked" aria-label="Professional enquiries">
+        <div class="support-block compact">
+            <p data-i18n="support.pro_text">Talks, conferences, training and collaborations.</p>
+            <a href="mailto:irenerouragarcia@gmail.com?subject=Collaboration%20enquiry"
+                class="support-link" data-i18n="support.pro_cta">GET IN TOUCH</a>
+        </div>
+    </section>
+
+    <!-- Floating consultation button (top right, chat bubble) -->
+    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" target="_blank" rel="noopener"
+        class="consult-fab" aria-label="Book a free consultation" title="Consultation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+        </svg>
+        <span class="consult-fab-label" data-i18n="home.consult_cta">Consultation</span>
+    </a>
+
+    <div class="signup-band">
+        <p data-i18n="signup.title">Get gentle, practical FND tools and latest news in your inbox</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQqC-g87gOfOLopDv-YPVZDtfQHhD2Iso0UI1QvNwn-w5B5A/viewform"
+            target="_blank" rel="noopener" class="btn-primary signup-btn" data-i18n="signup.btn">Join the newsletter</a>
+    </div>
+
+    <!--
+    ===================================================================
+    HIDDEN (Jul 2026): "Get your free relaxation audio" band + popup.
+    Paused at Irene's request until the audio delivery is properly set up.
+
+    TO RE-ENABLE:
+      1. Replace the .signup-band above with:
+             <div class="signup-band">
+                 <p data-i18n="signup.audio_title">Get your free relaxation audio</p>
+                 <button type="button" id="audioSignupBtn" class="btn-primary signup-btn"
+                     data-i18n="signup.audio_btn">Get the audio</button>
+             </div>
+      2. Uncomment the block below (remove this comment wrapper).
+      3. FormSubmit needs a one-time activation: the first submission sends a
+         confirmation email to irenerouragarcia@gmail.com — click the link once.
+      (The signup.audio_title / signup.audio_btn translations are still in script.js.)
+    ===================================================================
+
+    <div id="audio-modal" class="modal-overlay hidden">
+        <div class="modal-content audio-modal-content">
+            <button class="modal-close" id="audioModalClose" aria-label="Close">✕</button>
+            <h2 class="lang-en-only">Get your free relaxation audio</h2>
+            <h2 class="lang-es-only">Consigue tu audio de relajación gratuito</h2>
+            <form id="audioSignupForm" action="https://formsubmit.co/irenerouragarcia@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Relaxation audio waiting list signup">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://irenerouragarcia.com/?audio=thanks">
+                <label>
+                    <span class="lang-en-only">Your email</span>
+                    <span class="lang-es-only">Tu correo electrónico</span>
+                    <input type="email" name="email" required placeholder="name@example.com">
+                </label>
+                <label>
+                    <span class="lang-en-only">Preferred language</span>
+                    <span class="lang-es-only">Idioma preferido</span>
+                    <select name="language" required>
+                        <option value="English">English</option>
+                        <option value="Español">Español</option>
+                    </select>
+                </label>
+                <label class="audio-consent">
+                    <input type="checkbox" name="consent" value="yes" required>
+                    <span class="lang-en-only">I consent to being added to the mailing list.</span>
+                    <span class="lang-es-only">Doy mi consentimiento para ser añadida/o a la lista de correo.</span>
+                </label>
+                <button type="submit" class="btn-primary">
+                    <span class="lang-en-only">Get free audio</span>
+                    <span class="lang-es-only">Consigue el audio gratis</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var modal = document.getElementById('audio-modal');
+            document.getElementById('audioSignupBtn').addEventListener('click', function () {
+                modal.classList.remove('hidden');
+            });
+            document.getElementById('audioModalClose').addEventListener('click', function () {
+                modal.classList.add('hidden');
+            });
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) modal.classList.add('hidden');
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') modal.classList.add('hidden');
+            });
+        })();
+    </script>
+    -->
+
     <footer>
 
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=15"></script>
     <script>lucide.createIcons();</script>
 </body>
 

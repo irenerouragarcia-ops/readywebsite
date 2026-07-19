@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Irene Roura García</title>
+    <meta name="description"
+        content="Testimonials and stories from Irene Roura García's FND programs, courses and 1:1 sessions — participant-reported experiences collected through anonymous surveys since 2022.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Testimonials | Irene Roura García">
+    <meta property="og:description"
+        content="Testimonials and stories from FND programs, courses and 1:1 sessions.">
+    <meta property="og:url" content="https://irenerouragarcia.com/results.html">
+    <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
+    <meta name="twitter:card" content="summary">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=15">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="lang-en page-sub page-bg-forest bg-pos-left">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo_main.png" alt="Irene Roura García">
+        </a>
+        <div class="nav-actions">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="divider">|</span>
+                <button class="lang-btn" data-lang="es">ES</button>
+            </div>
+            <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="sessions.html" data-i18n="nav.sessions">Sessions</a></li>
+            <li><a href="results.html" class="active" data-i18n="nav.results">Testimonials</a></li>
+            <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="book.html" data-i18n="nav.book">Book</a></li>
+            <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="organic-container top-pad">
+        <section class="organic-section center-align">
+            <div class="content-glass wide">
+
+                <h1 data-i18n="results.title">Testimonials</h1>
+
+                <div class="results-filters" id="resultsFilters" role="group" aria-label="Filter stories">
+                    <button class="filter-btn" data-filter="all" aria-pressed="true"
+                        data-i18n="results.f_all">All</button>
+                    <button class="filter-btn" data-filter="1to1" aria-pressed="false" data-i18n="results.f_1to1">1:1
+                        sessions</button>
+                    <button class="filter-btn" data-filter="group" aria-pressed="false"
+                        data-i18n="results.f_group">Courses / Group Sessions</button>
+                </div>
+
+                <div class="results-grid" id="resultsGrid"></div>
+                <p class="reviews-empty" id="resultsError" hidden data-i18n="results.load_error">Stories are
+                    temporarily unavailable — please refresh the page, or get in touch.</p>
+
+                <div class="cta-row">
+                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary"
+                        target="_blank" rel="noopener" data-i18n="hero.cta">Book Discovery Call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="signup-band">
+        <p data-i18n="signup.title">Get gentle, practical FND tools in your inbox</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQqC-g87gOfOLopDv-YPVZDtfQHhD2Iso0UI1QvNwn-w5B5A/viewform"
+            target="_blank" rel="noopener" class="btn-primary signup-btn" data-i18n="signup.btn">Join the newsletter</a>
+    </div>
+
+    <footer>
+
+        <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js?v=15"></script>
+    <script>
+        lucide.createIcons();
+
+        (function () {
+            var DATA = null;
+            var activeFilter = 'all';
+            var TAGS = {
+                '1to1': { en: '1:1', es: '1:1' },
+                'group': { en: 'Course / Group', es: 'Curso / Grupo' }
+            };
+
+            function lang() { return localStorage.getItem('siteLang') || 'en'; }
+
+            function renderQuotes() {
+                var grid = document.getElementById('resultsGrid');
+                if (!DATA || !grid) return;
+                var L = lang();
+                var quotes = DATA.quotes.filter(function (q) {
+                    if (activeFilter === 'all') return true;
+                    return q.service === activeFilter;
+                });
+                grid.innerHTML = quotes.map(function (q) {
+                    var tag = TAGS[q.service] ? TAGS[q.service][L] : q.service;
+                    var text = L === 'es' ? (q.es || q.en) : (q.en || q.es);
+                    return '<figure class="result-card"><blockquote>“' + text +
+                        '”</blockquote><figcaption><span class="service-tag">' + tag +
+                        '</span></figcaption></figure>';
+                }).join('');
+            }
+
+            function renderAll() { renderQuotes(); }
+
+            document.getElementById('resultsFilters').addEventListener('click', function (e) {
+                var btn = e.target.closest('.filter-btn');
+                if (!btn) return;
+                activeFilter = btn.dataset.filter;
+                document.querySelectorAll('.filter-btn').forEach(function (b) {
+                    b.setAttribute('aria-pressed', String(b === btn));
+                });
+                renderQuotes();
+            });
+
+            // Re-render when the language toggle is used (script.js updates the dict texts).
+            document.querySelectorAll('.lang-btn').forEach(function (b) {
+                b.addEventListener('click', function () { setTimeout(renderAll, 0); });
+            });
+
+            fetch('data/testimonials.json')
+                .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+                .then(function (json) { DATA = json; renderAll(); })
+                .catch(function () {
+                    document.getElementById('resultsError').hidden = false;
+                });
+        })();
+    </script>
+</body>
+
+</html>

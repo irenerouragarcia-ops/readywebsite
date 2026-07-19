@@ -1,0 +1,324 @@
+{
+  "quotes": [
+    {
+      "id": "t3",
+      "service": "1to1",
+      "en": "I listen to her hypnosis every night, and it helps me feel calmer, more positive, and more in control. Over time, I've noticed that my confidence has grown, and I've learned better ways to manage my symptoms.",
+      "es": "Escucho su hipnosis cada noche y me ayuda a sentirme más tranquila, más positiva y con más control. Con el tiempo he notado que mi confianza ha crecido y he aprendido mejores formas de manejar mis síntomas.",
+      "attr_en": "1:1 client, 16",
+      "attr_es": "Cliente 1:1, 16 años"
+    },
+    {
+      "id": "t1",
+      "service": "group",
+      "en": "I have got more support for my FND journey in 3 weeks with Irene than I have in the 6 months since I was rushed to hospital.",
+      "es": "He recibido más apoyo en mi camino con el TNF en 3 semanas con Irene que en los 6 meses desde que me ingresaron de urgencia en el hospital.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t13",
+      "service": "1to1",
+      "en": "Irene opened my eyes and mind in ways to get in tune with my mind and body. She taught me a mindfulness pack specially catered to me and I had results that I never expected. I have improved with the illness thanks to the techniques Irene gave me, and I will use them in daily life from now on.",
+      "es": "Irene me abrió los ojos y la mente a formas de conectar con mi mente y mi cuerpo. Me enseñó un pack de mindfulness hecho especialmente para mí y obtuve resultados que nunca esperé. He mejorado con la enfermedad gracias a las técnicas que Irene me dio, y las usaré en mi vida diaria a partir de ahora.",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t12",
+      "service": "group",
+      "en": "Taking part in this course has allowed me to become a better version of me and to be able to take back control of my life, my thoughts and my happiness.",
+      "es": "Participar en este curso me ha permitido convertirme en una mejor versión de mí misma y recuperar el control de mi vida, mis pensamientos y mi felicidad.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t4",
+      "service": "1to1",
+      "en": "The positive changes in our daughter have been wonderful to see. She seems much calmer, more confident, and better able to manage the challenges she faces day to day. It's rare to find someone who even knows about FND, let alone specialises in it.",
+      "es": "Los cambios positivos en nuestra hija han sido maravillosos de ver. Se la ve mucho más tranquila, con más confianza y más capaz de afrontar los retos del día a día. Es raro encontrar a alguien que siquiera conozca el TNF, y más aún que se especialice en él.",
+      "attr_en": "Parent of a 1:1 client",
+      "attr_es": "Madre/padre de una cliente 1:1"
+    },
+    {
+      "id": "t9",
+      "service": "group",
+      "en": "Every week I looked forward to Wednesday. It has been so comforting to meet people who share the same condition and to feel understood — guided by Irene: warm, human, and a true professional.",
+      "es": "Cada semana tenía ganas de que llegara el miércoles. Ha sido muy reconfortante conocer a personas que comparten el mismo trastorno y sentirme comprendida... de la mano de Irene: cercana, humana y una gran profesional.",
+      "attr_en": "Participant, 12-month programme",
+      "attr_es": "Participante, programa de 12 meses"
+    },
+    {
+      "id": "t14",
+      "service": "1to1",
+      "en": "The individual sessions supported me in every way: I felt understood and always received practical tools that helped me.",
+      "es": "Las sesiones individuales me apoyaron en todos los sentidos: me sentí comprendida y siempre recibí herramientas prácticas que me ayudaron.",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t2",
+      "service": "group",
+      "en": "Irene's Mindfulness for FND has been a game changer for me. It has made me feel much less isolated and more positive about the future.",
+      "es": "El curso de Mindfulness para TNF de Irene ha sido un antes y un después para mí. Me ha hecho sentir mucho menos aislada y más positiva sobre el futuro.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t15",
+      "service": "1to1",
+      "en": "The hypnotherapy audio I received was personal, from suggestions I gave. It is amazing and I enjoy it regularly.",
+      "es": "El audio de hipnoterapia que recibí fue personalizado a partir de sugerencias que di. Es increíble y lo disfruto regularmente.",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t5",
+      "service": "group",
+      "en": "I met people I truly felt understood my experience... Irene's soft and soothing nature and wealth of experience means you are in the right hands. This is an extremely special thing Irene has created for FND patients.",
+      "es": "Conocí a personas que realmente sentí que entendían mi experiencia... La naturaleza suave y reconfortante de Irene y su gran experiencia hacen que estés en muy buenas manos. Esto que Irene ha creado para las personas con TNF es algo verdaderamente especial.",
+      "attr_en": "FND Care Program participant",
+      "attr_es": "Participante del FND Care Program"
+    },
+    {
+      "id": "t16",
+      "service": "1to1",
+      "en": "Irene was friendly and empathetic. The session was calming and a good reminder of grounding techniques. I fell asleep during hypnotherapy after receiving the audio!",
+      "es": "Irene fue cercana y empática. La sesión fue relajante y un buen recordatorio de las técnicas de grounding. ¡Me quedé dormida durante la hipnoterapia después de recibir el audio!",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t6",
+      "service": "group",
+      "en": "My seizures aren't as frequent or as bad as they were. My body is calmer. I've been able to meditate and set time for myself.",
+      "es": "Mis crisis ya no son tan frecuentes ni tan fuertes como antes. Mi cuerpo está más tranquilo. He podido meditar y reservar tiempo para mí.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t17",
+      "service": "group",
+      "en": "Having recently been diagnosed with FND and receiving no information from the specialist about what to expect or how to manage my symptoms, I was incredibly grateful to come across this course with Irene.",
+      "es": "Habiendo sido diagnosticada recientemente con TNF y sin recibir información del especialista sobre qué esperar o cómo manejar mis síntomas, estuve increíblemente agradecida de encontrar este curso con Irene.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t7",
+      "service": "group",
+      "en": "It is very refreshing to come across someone as empathetic as Irene, who accepts and supports without judgement.",
+      "es": "Es muy reconfortante encontrar a alguien tan empática como Irene, que acepta y apoya sin juzgar.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t8",
+      "service": "group",
+      "en": "This programme didn't just give me tools, but also a safe space where vulnerability became strength... This programme is a lighthouse for those of us navigating through the fog of FND.",
+      "es": "Este programa no sólo me dio herramientas, sino también un espacio seguro donde la vulnerabilidad se convirtió en fuerza... Este programa es un faro para quienes navegamos en la niebla de los TNF.",
+      "attr_en": "FND programme participant",
+      "attr_es": "Participante del programa TNF"
+    },
+    {
+      "id": "t18",
+      "service": "group",
+      "en": "The course has helped me get to know myself, learn how to care for myself, and above all to prioritise myself and listen to my body — something I never thought I would be capable of doing.",
+      "es": "El curso me ha ayudado a conocerme a mí misma, aprender a cuidarme y sobre todo a priorizarme y escuchar a mi cuerpo, algo que nunca pensé que sería capaz de hacer.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t10",
+      "service": "group",
+      "en": "Thanks to my fellow participants and to Irene I have been able to learn so much more about FND... I have felt supported and valued, and I have gained self-esteem and strength.",
+      "es": "Gracias a mis compañeros y a Irene he podido aprender mucho más del TNF... Me he sentido apoyada y valorada y he ganado en autoestima y fortaleza.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t11",
+      "service": "group",
+      "en": "I want to deeply thank you for this course... it has been a gift to feel understood, in a safe space, without judgement.",
+      "es": "Quiero agradecer profundamente este curso... ha sido un regalo sentirme comprendida, en un espacio seguro, sin juicios.",
+      "attr_en": "FND programme participant",
+      "attr_es": "Participante del programa TNF"
+    },
+    {
+      "id": "t19",
+      "service": "1to1",
+      "en": "Irene has helped me so much, and I can't thank her enough. As a 16-year-old girl, I have struggled with confidence and managing my FND, but her support and hypnosis recordings have made a real difference in my life.",
+      "es": "Irene me ha ayudado muchísimo y no puedo agradecérselo lo suficiente. Como chica de 16 años, he tenido dificultades con la confianza y el manejo de mi TNF, pero su apoyo y sus grabaciones de hipnosis han marcado una diferencia real en mi vida.",
+      "attr_en": "1:1 client, 16",
+      "attr_es": "Cliente 1:1, 16 años"
+    },
+    {
+      "id": "t20",
+      "service": "1to1",
+      "en": "The calm nature of Irene's approach, the hypnotherapy session, and giving me hope that this is not forever.",
+      "es": "La naturaleza tranquila del enfoque de Irene, la sesión de hipnoterapia, y darme esperanza de que esto no es para siempre.",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t21",
+      "service": "1to1",
+      "en": "Irene's non-judgemental and patient approach — helping me reframe some of my set ways of thinking.",
+      "es": "El enfoque paciente y sin juicios de Irene — ayudándome a replantear algunas de mis formas fijas de pensar.",
+      "attr_en": "1:1 client",
+      "attr_es": "Cliente 1:1"
+    },
+    {
+      "id": "t22",
+      "service": "group",
+      "en": "Did you know 'You deserve joy'? I didn't until I undertook this course with Irene. In such a short space of time I have gained more ideas for mindfulness and supporting my self-compassion than I have in more than a decade of struggling. I have seen my mindset improve and I've become more positive.",
+      "es": "¿Sabías que 'mereces alegría'? Yo no lo sabía hasta que hice este curso con Irene. En muy poco tiempo he ganado más ideas de mindfulness y autocompasión que en más de una década de lucha. He visto mejorar mi mentalidad y me he vuelto más positiva.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t23",
+      "service": "group",
+      "en": "During this course I felt more present than I have in years. It was truly unbelievable.",
+      "es": "Durante este curso me sentí más presente de lo que me había sentido en años. Fue realmente increíble.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t24",
+      "service": "group",
+      "en": "I found the techniques really beneficial and they have helped my seizures. The breathing, ear massage, music, humming, five senses and other grounding techniques have really helped to soothe and calm me.",
+      "es": "Las técnicas me parecieron realmente beneficiosas y han ayudado con mis crisis. La respiración, el masaje de orejas, la música, el tarareo, los cinco sentidos y otras técnicas de grounding me han ayudado mucho a calmarme.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t25",
+      "service": "group",
+      "en": "I have used some of the exercises to manage stress levels. It also helped to have validation of the issues I experience.",
+      "es": "He usado algunos de los ejercicios para manejar los niveles de estrés. También me ayudó sentir validación de los problemas que experimento.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t26",
+      "service": "group",
+      "en": "A huge thank you to Irene who really made the experience memorable because of her amazing ability to facilitate in a kind, caring, compassionate and inclusive way.",
+      "es": "Muchísimas gracias a Irene, que realmente hizo la experiencia memorable por su increíble capacidad de facilitar de una forma amable, atenta, compasiva e inclusiva.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t27",
+      "service": "group",
+      "en": "Irene is a calm voice of reason. Her thoughtfulness and skilled listening allow you to relax, learn and absorb the knowledge she has.",
+      "es": "Irene es una voz tranquila y sensata. Su consideración y su escucha experta te permiten relajarte, aprender y absorber el conocimiento que tiene.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t28",
+      "service": "group",
+      "en": "I have been really struggling with the changes in my life due to FND, and Irene's sessions allowed me to take back some control over how I am feeling.",
+      "es": "He tenido muchas dificultades con los cambios en mi vida debidos al TNF, y las sesiones de Irene me permitieron recuperar algo de control sobre cómo me siento.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t29",
+      "service": "group",
+      "en": "My anxiety has greatly changed for the better and I feel less overwhelmed when I am experiencing anxious thoughts. I made multiple breakthroughs in my thought patterns and am a happier and healthier person.",
+      "es": "Mi ansiedad ha cambiado mucho para mejor y me siento menos abrumada cuando tengo pensamientos ansiosos. Logré varios avances en mis patrones de pensamiento y soy una persona más feliz y más sana.",
+      "attr_en": "Course participant",
+      "attr_es": "Participante de curso"
+    },
+    {
+      "id": "t30",
+      "service": "group",
+      "en": "Living with FND is isolating. Having a safe, gentle and kind environment to think about how those feelings impact you physically is empowering.",
+      "es": "Vivir con TNF es aislante. Tener un entorno seguro, suave y amable donde pensar en cómo esos sentimientos te afectan físicamente es empoderador.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t31",
+      "service": "group",
+      "en": "I can't express enough gratitude for the noticeable improvements in my well-being. The mindfulness techniques helped me to fully understand the 'dance' between my thoughts, emotions and behaviours.",
+      "es": "No puedo expresar suficiente gratitud por las mejoras notables en mi bienestar. Las técnicas de mindfulness me ayudaron a entender del todo la 'danza' entre mis pensamientos, emociones y comportamientos.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t32",
+      "service": "group",
+      "en": "You helped me with my self-worth; I've become more positive since doing the course.",
+      "es": "Me ayudaste con mi autoestima; me he vuelto más positiva desde que hice el curso.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t33",
+      "service": "group",
+      "en": "I have gone on to do a counselling course online and set up an FND support group.",
+      "es": "Después he hecho un curso de counselling online y he creado un grupo de apoyo para personas con TNF.",
+      "attr_en": "Course participant, UK",
+      "attr_es": "Participante de curso, Reino Unido"
+    },
+    {
+      "id": "t34",
+      "service": "group",
+      "en": "I loved the programme. I had been on my own for a long time with everything that FND involves, and being able to share and listen to other people with the same condition helped me understand it better.",
+      "es": "Me encantó el programa. Llevaba mucho tiempo sola con todo lo que implica el TNF, y poder compartir y escuchar a otras personas con la misma condición me ayudó a entenderlo mejor.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t35",
+      "service": "group",
+      "en": "Irene is knowledgeable, supportive and kind. Feeling understood, believed and heard was a big help to me.",
+      "es": "Irene tiene mucho conocimiento, es solidaria y amable. Sentirme comprendida, creída y escuchada fue una gran ayuda para mí.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t36",
+      "service": "group",
+      "en": "It helped me to take care of myself, to feel valued, to learn breathing techniques I didn't know before, and above all to realise that I'm not always the only one in pain or feeling unwell.",
+      "es": "Me ayudó a cuidarme, a sentirme valorada, a aprender técnicas de respiración que no conocía, y sobre todo a darme cuenta de que no siempre soy la única que siente dolor o malestar.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t37",
+      "service": "group",
+      "en": "Together we learned wonderful techniques, very useful, calming, and relaxing for the nervous system, which in my personal case have been very valuable in everyday life.",
+      "es": "Juntas aprendimos técnicas maravillosas, muy útiles, calmantes y relajantes para el sistema nervioso, que en mi caso personal han sido muy valiosas en la vida diaria.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t38",
+      "service": "group",
+      "en": "I am grateful to Irene for her wonderful work as both a professional and a person, for guiding us with empathy and wisdom.",
+      "es": "Estoy agradecida a Irene por su maravilloso trabajo tanto como profesional y como persona, por guiarnos con empatía y sabiduría.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t39",
+      "service": "group",
+      "en": "The practices we learned have made everyday life much more manageable, even on the most difficult days.",
+      "es": "Las prácticas que aprendimos han hecho que la vida diaria sea mucho más manejable, incluso en los días más difíciles.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    },
+    {
+      "id": "t40",
+      "service": "group",
+      "en": "My experience as part of the group was enormously positive and enriching. I highly recommend this programme, both for the support network that is created and for Irene's knowledge and guidance.",
+      "es": "Mi experiencia como parte del grupo fue enormemente positiva y enriquecedora. Recomiendo encarecidamente este programa, tanto por la red de apoyo que se crea como por el conocimiento y la guía de Irene.",
+      "attr_en": "Programme participant",
+      "attr_es": "Participante del programa"
+    }
+  ]
+}

@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sessions | Irene Roura García</title>
+    <title>Sessions & Programs | Irene Roura García</title>
+    <meta name="description"
+        content="1:1 wellbeing coaching, hypnotherapy and FND support sessions, plus group programs in English and Spanish — with pricing and booking.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sessions & Programs | Irene Roura García">
+    <meta property="og:description"
+        content="1:1 wellbeing coaching, hypnotherapy and FND support, plus group programs in EN & ES.">
+    <meta property="og:url" content="https://irenerouragarcia.com/sessions.html">
+    <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
+    <meta name="twitter:card" content="summary">
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=15">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -31,7 +40,9 @@
         <ul class="nav-links">
             <li><a href="about.html" data-i18n="nav.about">About</a></li>
             <li><a href="sessions.html" class="active" data-i18n="nav.sessions">Sessions</a></li>
+            <li><a href="results.html" data-i18n="nav.results">Testimonials</a></li>
             <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="book.html" data-i18n="nav.book">Book</a></li>
             <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -43,7 +54,14 @@
             <div class="content-glass wide">
 
                 <h1 data-i18n="sessions.title">Sessions</h1>
-                <p data-i18n="sessions.intro" class="session-intro">Loading...</p>
+                <div data-i18n="sessions.intro_html" class="session-intro">
+                    <p>I offer support in a range of formats, including one-to-one sessions, regular group meetings and
+                        educational programmes.</p>
+                    <p>Below, you can find examples of some of the support packages that have worked well for other
+                        clients. Each package can be tailored to your individual needs, goals and circumstances.</p>
+                    <p>Please book a discovery call with me so we can discuss the type of support that may be most
+                        helpful for you.</p>
+                </div>
 
                 <div class="text-content session-titles-row">
                     <div class="session-text-group">
@@ -54,6 +72,11 @@
                                 and management of symptoms, using practical, sustainable tools from mindfulness, CBT,
                                 and polyvagal-informed approaches to help you build safety, balance, and inner resources
                                 in everyday life.</p>
+                            <figure class="session-quote">
+                                <blockquote data-i18n="sessions.q5">The individual sessions supported me in every way:
+                                    I felt understood and always received practical tools that helped me.</blockquote>
+                                <figcaption data-i18n="sessions.q5_attr">1:1 client</figcaption>
+                            </figure>
                         </div>
                     </div>
 
@@ -65,7 +88,14 @@
                                 to reframe unhelpful patterns and support long-standing conditions and associated
                                 symptoms such as anxiety and low mood. Sessions use personalised scripts tailored to
                                 what helps you feel calm, safe, and supported.</p>
-
+                            <figure class="session-quote">
+                                <blockquote data-i18n="sessions.q1">I listen to her hypnosis every night, and it helps
+                                    me feel calmer, more positive, and more in control. Over time, I've noticed that my
+                                    confidence has grown, and I've learned better ways to manage my symptoms.
+                                </blockquote>
+                                <!-- TODO: Irene confirm parental consent is recorded for this age-16 quote (t3), and review its ES translation in script.js -->
+                                <figcaption data-i18n="sessions.q1_attr">1:1 client</figcaption>
+                            </figure>
                         </div>
                     </div>
 
@@ -77,6 +107,14 @@
                                 Neurological Disorder. Support focused on understanding your symptoms, building
                                 confidence, and
                                 reclaiming a sense of control in your life.</p>
+                            <figure class="session-quote">
+                                <blockquote data-i18n="sessions.q2">The positive changes in our daughter have been
+                                    wonderful to see. She seems much calmer, more confident, and better able to manage
+                                    the challenges she faces day to day. It's rare to find someone who even knows about
+                                    FND, let alone specialises in it.</blockquote>
+                                <!-- TODO: Irene review ES translation of this quote (t4) in script.js -->
+                                <figcaption data-i18n="sessions.q2_attr">Parent of a 1:1 client</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -85,7 +123,7 @@
                 <!-- New Session Options Grid -->
                 <!-- New Session Options Grid -->
                 <div class="session-options-grid">
-                    <div class="session-option-card">
+                    <div class="session-option-card expanded">
                         <div class="option-header" onclick="toggleSessionOption(this)" role="button" tabindex="0"
                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleSessionOption(this); }">
                             <div class="header-content">
@@ -114,6 +152,8 @@
                                     <span class="item-price">£120</span>
                                 </div>
                                 <div class="price-divider"></div>
+                                <h4 class="package-group-title" data-i18n="sessions.opt1_group1_title">Wellbeing
+                                    Coaching packs</h4>
                                 <div class="price-item">
                                     <div class="item-details">
                                         <span class="item-name" data-i18n="sessions.opt1_pack3">3 sessions pack</span>
@@ -130,48 +170,100 @@
                                     </div>
                                     <span class="item-price">£330</span>
                                 </div>
+                                <div class="price-divider"></div>
+                                <h4 class="package-group-title" data-i18n="sessions.opt1_group2_title">Coaching &amp;
+                                    Hypnotherapy Packs</h4>
+                                <div data-i18n="sessions.opt1_special_html">
+                                    <ul class="package-features">
+                                        <li>6 × 1-hour weekly sessions</li>
+                                        <li>3 hypnotherapy sessions integrated within the process</li>
+                                        <li>Handouts and resources after each session</li>
+                                        <li>2 personalised audio recordings to use between sessions and afterwards</li>
+                                    </ul>
+                                </div>
+                                <div class="price-item">
+                                    <div class="item-details">
+                                        <span class="item-name" data-i18n="sessions.opt1_special_total">Total</span>
+                                    </div>
+                                    <span class="item-price">£460</span>
+                                </div>
+                                <div class="price-divider"></div>
+                                <h4 class="package-group-title" data-i18n="sessions.opt1_group3_title">Family Packs
+                                </h4>
+                                <p class="family-pack-line">
+                                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01"
+                                        target="_blank" rel="noopener" class="highlight-link"
+                                        data-i18n="sessions.opt1_family_link">Get in touch to tailor yours</a>
+                                </p>
                             </div>
-                            <p class="note" data-i18n="sessions.opt1_note">*All the sessions within the pack are one
+                            <p class="note" data-i18n="sessions.opt1_note">*All the sessions within the packs are one
                                 hour
                                 and include emails with handouts and resources after each session</p>
                         </div>
                     </div>
 
-                    <div class="session-option-card">
+                    <div class="session-option-card expanded">
                         <div class="option-header" onclick="toggleSessionOption(this)" role="button" tabindex="0"
                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleSessionOption(this); }">
                             <div class="header-content">
                                 <div class="card-icon-frame small-icon"></div>
-                                <h3 data-i18n="sessions.opt2_title">Group sessions / Programs</h3>
+                                <h3 data-i18n="sessions.opt2_title">Group Sessions &amp; Community</h3>
                             </div>
                             <i data-lucide="chevron-down" class="toggle-icon"></i>
                         </div>
                         <div class="option-content">
-                            <h4 class="program-title" data-i18n="sessions.opt2_prog_title">Winter FND Program</h4>
+                            <div class="community-patreon">
+                                <h4 class="package-group-title" data-i18n="sessions.opt2_courses_title">Courses:</h4>
+                                <div data-i18n="sessions.opt2_courses_html">
+                                    <ul class="package-features">
+                                        <li>Mindfulness for Positive Self-coaching</li>
+                                        <li>FND Self-care and the Nervous System</li>
+                                    </ul>
+                                </div>
+                                <p data-i18n="sessions.opt2_groups_text">I also run weekly closed group sessions and
+                                    regular open monthly group sessions.</p>
+                                <figure class="session-quote">
+                                    <blockquote data-i18n="sessions.q4">Every week I look forward to Wednesday. It
+                                        has been so comforting to meet people who share the same condition and to feel
+                                        understood — guided by Irene: warm, human, and a true professional.</blockquote>
+                                    <figcaption data-i18n="sessions.q4_attr">Group member - Patreon</figcaption>
+                                </figure>
+                                <p data-i18n="sessions.opt2_signup_text">You can sign up to join groups and get access
+                                    to my course material via my Patreon.</p>
+                                <a href="https://www.patreon.com/cw/IreneRouraGarcia" target="_blank" rel="noopener"
+                                    class="patreon-logo-link" aria-label="Visit my Patreon">
+                                    <img src="logo_hero_bottom.png" alt="Irene Roura García — Patreon community">
+                                </a>
+                                <br>
+                                <a href="https://www.patreon.com/15230186/join" target="_blank" rel="noopener"
+                                    class="btn-primary" data-i18n="sessions.opt2_patreon_btn">Join my Patreon</a>
+                            </div>
+                            <div class="price-divider"></div>
                             <div class="program-links">
-                                <a href="https://www.tickettailor.com/events/fndcare/2014674" target="_blank"
-                                    class="program-link">
-                                    <span data-i18n="sessions.opt2_prog_en_label">English Program</span> <i
-                                        data-lucide="external-link"></i>
-                                </a>
-                                <a href="https://www.tickettailor.com/events/fndcare/1989765" target="_blank"
-                                    class="program-link">
-                                    <span data-i18n="sessions.opt2_prog_es_label">Spanish Program</span> <i
-                                        data-lucide="external-link"></i>
-                                </a>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzlLHQsvdwLDZTHlmqs-TXp1A1F1xq5X0o1enHZHF4zYqUrA/viewform?usp=sharing&ouid=106063953887250430831"
-                                    target="_blank" class="program-update-link">
-                                    <span data-i18n="sessions.opt2_update_link">Keep me updated</span> <i
-                                        data-lucide="bell"></i>
-                                </a>
+                                <figure class="session-quote">
+                                    <blockquote data-i18n="sessions.q3">I met people I truly felt understood my
+                                        experience... Irene's soft and soothing nature and wealth of experience means
+                                        you are in the right hands. This is an extremely special thing Irene has
+                                        created for FND patients.</blockquote>
+                                    <figcaption data-i18n="sessions.q3_attr">Group member - Patreon</figcaption>
+                                </figure>
+                            </div>
+                            <div class="price-divider"></div>
+                            <div class="community-patreon">
+                                <p data-i18n="sessions.opt2_collab_text">Open to working with community groups,
+                                    clinical sites and charities to deliver existing courses and programs and to
+                                    develop new ones.</p>
+                                <a href="mailto:irenerouragarcia@gmail.com?subject=Courses%20%2F%20programs%20collaboration"
+                                    class="btn-primary" data-i18n="sessions.opt2_collab_btn">Get in touch</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div class="cta-container">
                     <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary"
-                        target="_blank" data-i18n="sessions.btn">Book Discovery Call</a>
+                        target="_blank" rel="noopener" data-i18n="sessions.btn">Book Discovery Call</a>
                 </div>
             </div>
 
@@ -190,12 +282,18 @@
         </div>
     </div>
 
+    <div class="signup-band">
+        <p data-i18n="signup.title">Get gentle, practical FND tools in your inbox</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQqC-g87gOfOLopDv-YPVZDtfQHhD2Iso0UI1QvNwn-w5B5A/viewform"
+            target="_blank" rel="noopener" class="btn-primary signup-btn" data-i18n="signup.btn">Join the newsletter</a>
+    </div>
+
     <footer>
 
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=15"></script>
     <script>lucide.createIcons();</script>
 </body>
 

@@ -3,20 +3,31 @@
 // --- 1. Content Data (Bilingual) ---
 const translations = {
     en: {
-        nav: { about: "About", sessions: "Sessions", resources: "Resources", shop: "Shop", contact: "Contact" },
+        nav: { about: "About", sessions: "Sessions", results: "Testimonials", resources: "Resources", book: "Book", shop: "Shop", contact: "Contact" },
         hero: {
             title: "Irene Roura García",
             subtitle: "Nurse · Wellbeing Coach · Hypnotherapist · FND Specialist",
-            cta: "Free Consultation"
+            cta: "Book Discovery Call",
+            tools_link: "FND Care Guide",
+            stories_link: "Read more →"
+        },
+        home: {
+            quotes_title: "Testimonials",
+            consult_cta: "Consultation"
         },
         about: {
-            full_text: "<p>I am a nurse specialized in mental health, hypnotherapist, wellbeing coach, and Functional Neurological Disorder (FND) specialist. I have worked as a nurse at NHS mental health, neurology, and neuropsychiatry wards. I spent five years working on an inpatient neuropsychiatric ward supporting people living with FND, where I first encountered the condition and developed a strong commitment to support people living with it.</p><p>From early in my training, I was drawn to approaches that support the mind–body connection and nervous system regulation. I now integrate my clinical experience with hypnotherapy, mindfulness, and polyvagal theory–informed practices. I believe meaningful and lasting change comes from a holistic approach and from focusing on practical, helpful steps that can be adapted to each person’s circumstances.</p><p>Today, I collaborate with FND charities to deliver courses, I  offer one-to-one sessions and run programs for people living with FND worldwide. I am also about to publish a book in collaboration with people with lived experience, and I am a member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" class=\"highlight-link\">FND UK Network</a>, where I represent the Royal College of Nursing.</p>"
+            title: "About Me",
+            full_text: "<p>I am a nurse specialized in mental health, hypnotherapist, wellbeing coach, and Functional Neurological Disorder (FND) specialist. I have worked as a nurse at NHS mental health, neurology, and neuropsychiatry wards. I spent five years working on an inpatient neuropsychiatric ward supporting people living with FND, where I first encountered the condition and developed a strong commitment to support people living with it.</p><p>From early in my training, I was drawn to approaches that support the mind–body connection and nervous system regulation. I now integrate my clinical experience with hypnotherapy, mindfulness, and polyvagal theory–informed practices. I believe meaningful and lasting change comes from a holistic approach and from focusing on practical, helpful steps that can be adapted to each person’s circumstances.</p><p>Today, I collaborate with FND charities to deliver courses, I  offer one-to-one sessions and run programs for people living with FND worldwide. I am also about to publish a book in collaboration with people with lived experience, and I am a member of the FND UK Network, where I represent the Royal College of Nursing.</p>",
+            credentials_title: "Credentials & trust",
+            credentials_html: "<ul class=\"credentials-list\"><li>Registered General Nurse, specialised in Mental Health — NHS experience in mental health, neurology and neuropsychiatry, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">view certificate</a>)</li><li>Hypnotherapist (view credentials: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Wellbeing Coach</li><li>Member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — representing the Royal College of Nursing</li><li>Author of the <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
+            approach_title: "My approach",
+            approach_html: "<p>I combine clinical experience with mindfulness, CBT-informed and polyvagal-informed practices, and hypnotherapy, amongst other practices that support nervous system regulation and overall wellbeing — always translated into practical, sustainable steps adapted to each person's circumstances, needs and energy.</p><p>My approach is gentle and compassionate: first, I will hear you. From there, I will suggest a path and a plan for us to explore together as we move towards the life you want to live.</p>"
         },
         sessions: {
             title: "Sessions",
-            intro: "I offer support in a range of formats, including one-to-one sessions, regular group meetings, and educational programs. See below for information on how I structure some of my packs that have worked well for other clients. If you would like to discuss what might work best for you, please book a discovery call with me.",
+            intro_html: "<p>I offer support in a range of formats, including one-to-one sessions, regular group meetings and educational programmes.</p><p>Below, you can find examples of some of the support packages that have worked well for other clients. Each package can be tailored to your individual needs, goals and circumstances.</p><p>Please book a discovery call with me so we can discuss the type of support that may be most helpful for you.</p>",
             offer1_title: "Wellbeing Coaching",
-            offer1_text: "Personalised sessions designed to support your wellbeing and management of symptoms, using practical, sustainable tools from mindfulness, CBT, and polyvagal-informed approaches to help you build safety, balance, and inner resources in everyday life.",
+            offer1_text: "Personalised sessions designed to support your wellbeing and the management of your symptoms — using practical, sustainable tools from mindfulness, CBT, polyvagal-informed and other nervous system regulation approaches, to help you rebuild safety, control and inner resources in everyday life.",
             offer2_title: "Hypnotherapy",
             offer2_text: "Subconscious-focused (similar to relaxation-based) work to reframe unhelpful patterns and support long-standing conditions and associated symptoms such as anxiety and low mood. Sessions use personalised scripts tailored to what helps you feel calm, safe, and supported.",
             offer3_title: "FND Support",
@@ -30,16 +41,36 @@ const translations = {
             opt1_item1_note: "(wellbeing coaching)",
             opt1_item2: "1.5 hour session + hypnotherapy recording",
             opt1_item2_note: "(wellbeing coaching + hypnotherapy)",
+            opt1_group1_title: "Wellbeing Coaching Packs",
             opt1_pack3: "3 sessions pack",
             opt1_pack3_note: "(wellbeing coaching)",
             opt1_pack6: "6 sessions pack",
             opt1_pack6_note: "(includes 1 hypnotherapy session)",
-            opt1_note: "*All sessions within the package are weekly, one hour long and include follow-up emails with handouts and additional resources after each session.",
-            opt2_title: "Group sessions / Programs",
-            opt2_prog_title: "Winter FND Program",
-            opt2_prog_en_label: "English Program",
-            opt2_prog_es_label: "Spanish Program",
-            opt2_update_link: "Keep me updated"
+            opt1_group2_title: "Coaching & Hypnotherapy Packs",
+            opt1_special_html: "<ul class=\"package-features\"><li>6 × 1-hour weekly sessions</li><li>3 hypnotherapy sessions integrated within the process</li><li>Handouts and resources after each session</li><li>2 personalised audio recordings to use between sessions and afterwards</li></ul>",
+            opt1_special_total: "Total",
+            opt1_group3_title: "Family Packs",
+            opt1_family_link: "Get in touch to tailor yours",
+            opt1_note: "*All sessions within the packages are weekly, one hour long and include follow-up emails with handouts and additional resources after each session.",
+            opt2_title: "Group Sessions & Courses",
+            opt2_courses_title: "Courses:",
+            opt2_courses_html: "<ul class=\"package-features\"><li>Mindfulness for Positive Self-coaching</li><li>FND Self-care and the Nervous System</li></ul>",
+            opt2_groups_text: "I also run weekly closed group sessions and regular open monthly group sessions.",
+            opt2_signup_text: "You can sign up to join groups and get access to my course material via my Patreon.",
+            opt2_collab_text: "Open to working with community groups, clinical sites and charities to deliver existing courses and programs and to develop new ones.",
+            opt2_collab_btn: "Get in touch",
+            opt2_patreon_btn: "Join my Patreon",
+
+            q1: "I listen to her hypnosis every night, and it helps me feel calmer, more positive, and more in control. Over time, I've noticed that my confidence has grown, and I've learned better ways to manage my symptoms.",
+            q1_attr: "1:1 client",
+            q5: "The individual sessions supported me in every way: I felt understood and always received practical tools that helped me.",
+            q5_attr: "1:1 client",
+            q2: "As her mum, I just wanted to share how much improvement we have seen since our session with Irene. The positive changes in our daughter have been wonderful to see. She seems much calmer, more confident, and better able to manage the challenges she faces day to day. The hypnotherapy recordings have become an important part of our routine. Not only does our daughter benefit from listening to them, but my husband and I do too. We often listen to the hypnotherapy at night, and it helps us relax and sleep much better. It's rare to find someone who even knows about FND, let alone specialises in it. We feel blessed that we found Irene!",
+            q2_attr: "Parent of a 1:1 client",
+            q3: "I met people I truly felt understood my experience... Irene's soft and soothing nature and wealth of experience means you are in the right hands. This is an extremely special thing Irene has created for FND patients.",
+            q3_attr: "Group member - Patreon",
+            q4: "Every week I look forward to Wednesday. It has been so comforting to meet people who share the same condition and to feel understood — guided by Irene: warm, human, and a true professional.",
+            q4_attr: "Group member - Patreon"
         },
         resources: {
             title: "Resources",
@@ -49,6 +80,7 @@ const translations = {
             item3: "FND Care Whatsapp Group",
             item4: "Personalized Hypnotherapy Audio",
             more_coming: "More resources coming up soon",
+            community_btn: "FND Community and Support",
             viz_title: "FND Keywords and Concepts",
             view_btn: "View Link",
             join_btn: "Join Group",
@@ -58,6 +90,36 @@ const translations = {
             title: "Shop",
             text: "Products coming up soon.",
             btn: "Visit Full Shop"
+        },
+        results: {
+            title: "Testimonials",
+            f_all: "All",
+            f_1to1: "1:1 sessions",
+            f_group: "Courses / Group Sessions",
+            disclaimer: "Participant-reported experiences from anonymous program/courses surveys. Support is educational and complementary — not a substitute for medical care.",
+            load_error: "Stories are temporarily unavailable — please refresh the page, or get in touch."
+        },
+        book: {
+            title: "FND Care Guide - Book",
+            tagline: "Written in collaboration with people living with FND and created with care, clarity, and intention, this guide is a compassionate, practical handbook designed to share with you what has helped other people living with FND manage their symptoms, feel more in control, and improve their wellbeing — and what might help you, too. It has been shaped by the insights and voices of the FND community.",
+            inside_title: "What's inside",
+            inside_html: "<ul class=\"book-features-list\"><li>Practical tools to help you manage symptoms and feel more in control</li><li>Everyday practices to support your body and mind</li><li>Lived experiences and shared wisdom from the FND community</li><li>Guidance for navigating FND and building your personal toolkit</li><li>A reminder that improvement, connection, and hope are possible</li><li>Messages of support from the community</li></ul>",
+            who_title: "Who it's for",
+            who_html: "<ul class=\"book-features-list\"><li>People living with FND</li><li>Their families</li><li>Healthcare professionals</li><li>And everyone else</li></ul>",
+            buy_btn: "First Special Edition",
+            reviews_title: "Book Reviews"
+        },
+        support: {
+            pro_title: "Collaboration",
+            pro_text: "Talks, conferences, training and collaborations.",
+            pro_cta: "GET IN TOUCH",
+            pro_cta_contact: "Get in touch"
+        },
+        signup: {
+            title: "Get gentle, practical FND tools and latest news in your inbox",
+            btn: "Join the newsletter",
+            audio_title: "Get your free relaxation audio",
+            audio_btn: "Get the audio"
         },
         contact: {
             title: "Contact",
@@ -75,21 +137,31 @@ const translations = {
         }
     },
     es: {
-        nav: { about: "Sobre mí", sessions: "Sesiones", resources: "Recursos", shop: "Tienda", contact: "Contacto" },
+        nav: { about: "Sobre mí", sessions: "Sesiones", results: "Testimonios", resources: "Recursos", book: "Libro", shop: "Tienda", contact: "Contacto" },
         hero: {
             title: "Irene Roura García",
             subtitle: "Enfermera · Coach de Bienestar · Hipnoterapeuta · Especialista TNF",
-            cta: "Consulta Gratuita"
+            cta: "Reservar Llamada de Descubrimiento",
+            tools_link: "FND Care Guide",
+            stories_link: "Lee más →"
+        },
+        home: {
+            quotes_title: "Testimonios",
+            consult_cta: "Consulta"
         },
         about: {
             title: "Sobre Mí",
-            full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). Mi experiencia profesional incluye salud mental, neurología y neuropsiquiatría dentro del NHS (sistema público de salud en Inglaterra). Trabajé durante cinco años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF donde conocí esta condición por primera vez y desarrollé un fuerte compromiso en apoyar a las personas que lo sufren.</p><p>Desde el inicio de mi formación, me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Actualmente combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge a través de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias de cada persona.</p><p>En la actualidad, colaboro con organizaciones benéficas de TNF impartiendo cursos y también ofrezco programas y sesiones individuales (todo online). Estoy a punto de publicar un libro en colaboración con personas con experiencia vivida de TNF \"FND Care Guide\" y soy miembro de la Red de TNF de Reino Unido (<a href=\"https://ukfndnetwork.org/\" target=\"_blank\" class=\"highlight-link\">FND UK Network</a>), donde represento la profesión de enfermería.</p>"
+            full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). Mi experiencia profesional incluye salud mental, neurología y neuropsiquiatría dentro del NHS (sistema público de salud en Inglaterra). Trabajé durante cinco años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF donde conocí esta condición por primera vez y desarrollé un fuerte compromiso en apoyar a las personas que lo sufren.</p><p>Desde el inicio de mi formación, me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Actualmente combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge a través de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias de cada persona.</p><p>En la actualidad, colaboro con organizaciones benéficas de TNF impartiendo cursos y también ofrezco programas y sesiones individuales (todo online). Estoy a punto de publicar un libro en colaboración con personas con experiencia vivida de TNF \"FND Care Guide\" y soy miembro de la Red de TNF de Reino Unido (FND UK Network), donde represento la profesión de enfermería.</p>",
+            credentials_title: "Credenciales y confianza",
+            credentials_html: "<ul class=\"credentials-list\"><li>Enfermera Generalista, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">ver certificado</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — en representación del Royal College of Nursing</li><li>Autora de la <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
+            approach_title: "Mi enfoque",
+            approach_html: "<p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable y compasivo: primero, te escucharé. A partir de ahí, te propondré un camino y un plan para explorar juntas mientras avanzamos hacia la vida que quieres vivir.</p>"
         },
         sessions: {
             title: "Sesiones",
-            intro: "Ofrezco apoyo en diversos formatos, incluyendo sesiones individuales, reuniones grupales y programas educativos. A continuación encontrarás información sobre cómo estructuro algunos de mis paquetes que han funcionado bien para otros clientes. Si te gustaría comentar qué opción podría ser la mejor para ti, no dudes en reservar una llamada de descubrimiento conmigo.",
+            intro_html: "<p>Ofrezco apoyo en diversos formatos, incluyendo sesiones individuales, reuniones grupales y programas educativos.</p><p>A continuación encontrarás ejemplos de algunos de los paquetes de apoyo que han funcionado bien para otros clientes. Cada paquete puede adaptarse a tus necesidades, objetivos y circunstancias individuales.</p><p>Reserva una llamada de descubrimiento conmigo para que podamos hablar del tipo de apoyo que puede ser más útil para ti.</p>",
             offer1_title: "Coaching de Bienestar",
-            offer1_text: "Sesiones personalizadas diseñadas para apoyar tu bienestar y el manejo de tus síntomas, utilizando herramientas prácticas y sostenibles basadas en mindfulness, TCC y enfoques informados en la teoría polivagal para ayudarte a construir seguridad, equilibrio y recursos internos en tu vida diaria.",
+            offer1_text: "Sesiones personalizadas diseñadas para apoyar tu bienestar y el manejo de tus síntomas — utilizando herramientas prácticas y sostenibles basadas en mindfulness, TCC, la teoría polivagal y otros enfoques de regulación del sistema nervioso, para ayudarte a reconstruir seguridad, control y recursos internos en tu vida diaria.",
             offer2_title: "Hipnoterapia",
             offer2_text: "Trabajo enfocado en el subconsciente (similar a la relajación) para reencuadrar patrones poco útiles y apoyar condiciones de larga duración y síntomas asociados como ansiedad y bajo estado de ánimo. Las sesiones utilizan guiones personalizados adaptados a lo que te ayuda a sentir calma, seguridad y apoyo.",
             offer3_title: "Apoyo TNF",
@@ -103,16 +175,36 @@ const translations = {
             opt1_item1_note: "(coaching de bienestar)",
             opt1_item2: "Sesión 1.5 horas + grabación de hipnoterapia",
             opt1_item2_note: "(coaching de bienestar + hipnoterapia)",
+            opt1_group1_title: "Packs de Coaching de Bienestar",
+            q5: "Las sesiones individuales me apoyaron en todos los sentidos: me sentí comprendida y siempre recibí herramientas prácticas que me ayudaron.",
+            q5_attr: "Cliente 1:1",
             opt1_pack3: "Pack 3 sesiones",
             opt1_pack3_note: "(coaching de bienestar)",
             opt1_pack6: "Pack 6 sesiones",
             opt1_pack6_note: "(incluye 1 sesión de hipnoterapia)",
-            opt1_note: "*Todas las sesiones del paquete son semanales, de una hora de duración e incluyen correos de seguimiento con material y recursos adicionales después de cada sesión",
-            opt2_title: "Sesiones grupales / Programas",
-            opt2_prog_title: "Programa TNF Invierno",
-            opt2_prog_en_label: "Programa en Inglés",
-            opt2_prog_es_label: "Programa en Español",
-            opt2_update_link: "Mantenerme informado"
+            opt1_group2_title: "Packs de Coaching e Hipnoterapia",
+            opt1_special_html: "<ul class=\"package-features\"><li>6 sesiones semanales de 1 hora</li><li>3 sesiones de hipnoterapia integradas en el proceso</li><li>Material y recursos después de cada sesión</li><li>2 grabaciones de audio personalizadas para usar entre sesiones y después</li></ul>",
+            opt1_special_total: "Total",
+            opt1_group3_title: "Packs Familiares",
+            opt1_family_link: "Ponte en contacto para adaptar el tuyo",
+            opt1_note: "*Todas las sesiones de los paquetes son semanales, de una hora de duración e incluyen correos de seguimiento con material y recursos adicionales después de cada sesión",
+            opt2_title: "Sesiones Grupales y Cursos",
+            opt2_courses_title: "Cursos:",
+            opt2_courses_html: "<ul class=\"package-features\"><li>Mindfulness para el Autocoaching Positivo</li><li>Autocuidado TNF y el Sistema Nervioso</li></ul>",
+            opt2_groups_text: "También facilito sesiones grupales semanales en grupo cerrado y sesiones grupales abiertas mensuales.",
+            opt2_signup_text: "Puedes inscribirte para unirte a los grupos y acceder al material de mis cursos a través de mi Patreon.",
+            opt2_collab_text: "Abierta a colaborar con grupos comunitarios, centros clínicos y organizaciones benéficas para impartir cursos y programas existentes y desarrollar nuevos.",
+            opt2_collab_btn: "Ponte en contacto",
+            opt2_patreon_btn: "Únete a mi Patreon",
+
+            q1: "Escucho su hipnosis cada noche y me ayuda a sentirme más tranquila, más positiva y con más control. Con el tiempo he notado que mi confianza ha crecido y he aprendido mejores formas de manejar mis síntomas.",
+            q1_attr: "Cliente 1:1",
+            q2: "Como su madre, solo quería compartir la gran mejoría que hemos visto desde nuestra sesión con Irene. Los cambios positivos en nuestra hija han sido maravillosos de ver. Se la ve mucho más tranquila, con más confianza y más capaz de afrontar los retos del día a día. Las grabaciones de hipnoterapia se han convertido en una parte importante de nuestra rutina. No solo se beneficia nuestra hija al escucharlas: mi marido y yo también. A menudo escuchamos la hipnoterapia por la noche y nos ayuda a relajarnos y dormir mucho mejor. Es raro encontrar a alguien que siquiera conozca el TNF, y más aún que se especialice en él. ¡Nos sentimos muy afortunados de haber encontrado a Irene!",
+            q2_attr: "Madre de una cliente 1:1",
+            q3: "Conocí a personas que realmente sentí que entendían mi experiencia... La naturaleza suave y reconfortante de Irene y su gran experiencia hacen que estés en muy buenas manos. Esto que Irene ha creado para las personas con TNF es algo verdaderamente especial.",
+            q3_attr: "Miembro del grupo - Patreon",
+            q4: "Cada semana tengo ganas de que llegue el miércoles. Ha sido muy reconfortante conocer a personas que comparten el mismo trastorno y sentirme comprendida... de la mano de Irene: cercana, humana y una gran profesional.",
+            q4_attr: "Miembro del grupo - Patreon"
         },
         resources: {
             title: "Recursos",
@@ -122,6 +214,7 @@ const translations = {
             item3: "Grupo de WhatsApp FND Care",
             item4: "Audio de Hipnoterapia Personalizada",
             more_coming: "Más recursos próximamente",
+            community_btn: "Comunidad y Apoyo TNF",
             viz_title: "Palabras clave y conceptos - Visualización Interactiva",
             view_btn: "Ver enlace",
             join_btn: "Unirse al grupo",
@@ -131,6 +224,36 @@ const translations = {
             title: "Tienda",
             text: "Próximamente nuevos productos.",
             btn: "Visitar Tienda Completa"
+        },
+        results: {
+            title: "Testimonios",
+            f_all: "Todos",
+            f_1to1: "Sesiones 1:1",
+            f_group: "Cursos / Sesiones Grupales",
+            disclaimer: "Experiencias reportadas por participantes en encuestas anónimas de los programas y cursos. El apoyo es educativo y complementario — no sustituye la atención médica.",
+            load_error: "Los testimonios no están disponibles temporalmente — actualiza la página o escríbeme."
+        },
+        book: {
+            title: "FND Care Guide - Libro",
+            tagline: "Escrita en colaboración con personas que viven con TNF y creada con cuidado, claridad e intención, esta guía es un manual compasivo y práctico diseñado para compartir contigo lo que ha ayudado a otras personas que viven con TNF a manejar sus síntomas, sentirse más en control y mejorar su bienestar — y lo que también podría ayudarte a ti. Ha sido moldeada por las voces y experiencias de la comunidad TNF.",
+            inside_title: "Qué encontrarás",
+            inside_html: "<ul class=\"book-features-list\"><li>Herramientas prácticas para ayudarte a manejar síntomas y sentirte más en control</li><li>Prácticas cotidianas para cuidar tu cuerpo y tu mente</li><li>Experiencias vividas y sabiduría compartida de la comunidad TNF</li><li>Orientación para navegar el TNF y construir tu kit de herramientas personal</li><li>Un recordatorio de que la mejoría, la conexión y la esperanza son posibles</li><li>Mensajes de apoyo de la comunidad</li></ul>",
+            who_title: "Para quién es",
+            who_html: "<ul class=\"book-features-list\"><li>Personas que viven con TNF</li><li>Sus familias</li><li>Profesionales de la salud</li><li>Y todas las demás personas</li></ul>",
+            buy_btn: "Primera Edición Especial",
+            reviews_title: "Reseñas del Libro"
+        },
+        support: {
+            pro_title: "Colaboración",
+            pro_text: "Charlas, congresos, formación y colaboraciones.",
+            pro_cta: "PONTE EN CONTACTO",
+            pro_cta_contact: "Ponte en contacto"
+        },
+        signup: {
+            title: "Recibe herramientas prácticas y amables para el TNF y las últimas novedades en tu correo",
+            btn: "Suscríbete al boletín",
+            audio_title: "Consigue tu audio de relajación gratuito",
+            audio_btn: "Conseguir el audio"
         },
         contact: {
             title: "Contacto",
@@ -274,6 +397,94 @@ const testimonials = [
     }
 ];
 
+// Curated slider for home & about pages — alternating 1:1 and course/programme voices,
+// starting with (and giving more weight to) 1:1 clients.
+const homeTestimonials = [
+    {
+        en: "I listen to her hypnosis every night, and it helps me feel calmer, more positive, and more in control. Over time, I've noticed that my confidence has grown, and I've learned better ways to manage my symptoms.",
+        es: "Escucho su hipnosis cada noche y me ayuda a sentirme más tranquila, más positiva y con más control. Con el tiempo he notado que mi confianza ha crecido y he aprendido mejores formas de manejar mis síntomas.",
+        attr_en: "1:1 client", attr_es: "Cliente 1:1"
+    },
+    {
+        en: "I have got more support for my FND journey in 3 weeks with Irene than I have in the 6 months since I was rushed to hospital.",
+        es: "He recibido más apoyo en mi camino con el TNF en 3 semanas con Irene que en los 6 meses desde que me ingresaron de urgencia en el hospital.",
+        attr_en: "Course participant", attr_es: "Participante de curso"
+    },
+    {
+        en: "Irene opened my eyes and mind in ways to get in tune with my mind and body. She taught me a mindfulness pack specially catered to me and I had results that I never expected.",
+        es: "Irene me abrió los ojos y la mente a formas de conectar con mi mente y mi cuerpo. Me enseñó un pack de mindfulness hecho especialmente para mí y obtuve resultados que nunca esperé.",
+        attr_en: "1:1 client", attr_es: "Cliente 1:1"
+    },
+    {
+        en: "Taking part in this course has allowed me to become a better version of me and to be able to take back control of my life, my thoughts and my happiness.",
+        es: "Participar en este curso me ha permitido convertirme en una mejor versión de mí misma y recuperar el control de mi vida, mis pensamientos y mi felicidad.",
+        attr_en: "Course participant", attr_es: "Participante de curso"
+    },
+    {
+        en: "The positive changes in our daughter have been wonderful to see. She seems much calmer, more confident, and better able to manage the challenges she faces day to day. It's rare to find someone who even knows about FND, let alone specialises in it.",
+        es: "Los cambios positivos en nuestra hija han sido maravillosos de ver. Se la ve mucho más tranquila, con más confianza y más capaz de afrontar los retos del día a día. Es raro encontrar a alguien que siquiera conozca el TNF, y más aún que se especialice en él.",
+        attr_en: "Parent of a 1:1 client", attr_es: "Madre/padre de una cliente 1:1"
+    },
+    {
+        en: "Every week I looked forward to Wednesday. It has been so comforting to meet people who share the same condition and to feel understood — guided by Irene: warm, human, and a true professional.",
+        es: "Cada semana tenía ganas de que llegara el miércoles. Ha sido muy reconfortante conocer a personas que comparten el mismo trastorno y sentirme comprendida... de la mano de Irene: cercana, humana y una gran profesional.",
+        attr_en: "Course participant", attr_es: "Participante de curso"
+    },
+    {
+        en: "The individual sessions supported me in every way: I felt understood and always received practical tools that helped me.",
+        es: "Las sesiones individuales me apoyaron en todos los sentidos: me sentí comprendida y siempre recibí herramientas prácticas que me ayudaron.",
+        attr_en: "1:1 client", attr_es: "Cliente 1:1"
+    },
+    {
+        en: "The course has helped me get to know myself, learn how to care for myself, and above all to prioritise myself and listen to my body — something I never thought I would be capable of doing.",
+        es: "El curso me ha ayudado a conocerme a mí misma, aprender a cuidarme y sobre todo a priorizarme y escuchar a mi cuerpo, algo que nunca pensé que sería capaz de hacer.",
+        attr_en: "Course participant", attr_es: "Participante de curso"
+    }
+];
+
+// Book reviews (from the Feedback Book document) — shown one by one on book.html.
+// Order: starts with lived experience, alternating with professionals where possible.
+const bookReviews = [
+    {
+        en: "I feel like this book will definitely help those with FND or newly diagnosed with this condition, as there is a lot of useful information and practices.",
+        es: "Siento que este libro sin duda ayudará a quienes viven con TNF o acaban de recibir el diagnóstico, ya que contiene mucha información y prácticas útiles.",
+        attr_en: "Jasmine Marballie (person with lived experience of FND)", attr_es: "Jasmine Marballie (persona con experiencia vivida de TNF)"
+    },
+    {
+        en: "A useful, accessible, and compassionate guide for people with Functional Neurological Disorder and their carers. Full of practical tools, insights, and encouragement for both those newly diagnosed and those navigating long-term challenges.",
+        es: "Una guía útil, accesible y compasiva para personas con Trastorno Neurológico Funcional y quienes las cuidan. Llena de herramientas prácticas, ideas y ánimo, tanto para quienes acaban de recibir el diagnóstico como para quienes afrontan retos a largo plazo.",
+        attr_en: "Dr Alan Kellas, Psychiatrist (MBBS, MRCPsych)", attr_es: "Dr Alan Kellas, Psiquiatra (MBBS, MRCPsych)"
+    },
+    {
+        en: "There are a variety of helpful practices throughout the book, which allows people to trial what best suits them and their symptoms to find relief.",
+        es: "Hay una gran variedad de prácticas útiles a lo largo del libro, que permiten a cada persona probar lo que mejor se adapta a ella y a sus síntomas para encontrar alivio.",
+        attr_en: "Amber Flavia (person with lived experience of FND)", attr_es: "Amber Flavia (persona con experiencia vivida de TNF)"
+    },
+    {
+        en: "For people with FND, feeling seen and understood can be rare. This book will bring clarity, comfort, and hope to many.",
+        es: "Para las personas con TNF, sentirse vistas y comprendidas puede ser poco común. Este libro traerá claridad, consuelo y esperanza a muchas personas.",
+        attr_en: "Penny Crawley, RMN, Senior Lecturer in Mental Health Nursing", attr_es: "Penny Crawley, RMN, Profesora Titular de Enfermería de Salud Mental"
+    },
+    {
+        en: "Unlike any other FND resource I've seen, this guide offers personalised strategies for calming the nervous system, while highlighting the human side of self-management and hope.",
+        es: "A diferencia de cualquier otro recurso sobre TNF que haya visto, esta guía ofrece estrategias personalizadas para calmar el sistema nervioso, destacando el lado humano del autocuidado y la esperanza.",
+        attr_en: "Jason Kreuzman, MOT, OTR/L", attr_es: "Jason Kreuzman, MOT, OTR/L"
+    },
+    {
+        en: "It is a useful and practical book that helps us enhance our treatment plans for patients with FND... What I love is that all these strategies have been tested by patients with FND, which makes it even more valuable.",
+        es: "Es un libro útil y práctico que nos ayuda a mejorar los planes de tratamiento de pacientes con TNF... Lo que más me gusta es que todas estas estrategias han sido probadas por pacientes con TNF, lo que lo hace aún más valioso.",
+        attr_en: "Ivonne Castellanos Vázquez, Physical Therapist", attr_es: "Ivonne Castellanos Vázquez, Fisioterapeuta"
+    }
+];
+
+const sliderSources = { home: homeTestimonials, book: bookReviews };
+
+function sliderData() {
+    const track = document.querySelector('.testimonial-track');
+    if (!track) return [];
+    return sliderSources[track.dataset.source || 'home'] || homeTestimonials;
+}
+
 let sliderInterval;
 let currentSlide = 0;
 
@@ -312,14 +523,15 @@ function renderSlides() {
     // Clear existing
     track.innerHTML = '';
 
-    testimonials.forEach((t, index) => {
+    sliderData().forEach((t, index) => {
         const slide = document.createElement('div');
         slide.className = 'testimonial-slide';
         if (index === currentSlide) slide.classList.add('active');
 
         const quoteText = currentLang === 'en' ? t.en : (t.es || t.en);
+        const attr = currentLang === 'en' ? t.attr_en : (t.attr_es || t.attr_en);
 
-        slide.innerHTML = `<p>"${quoteText}"</p>`;
+        slide.innerHTML = `<p>"${quoteText}"</p>` + (attr ? `<span class="slide-attr">${attr}</span>` : '');
         track.appendChild(slide);
     });
 }

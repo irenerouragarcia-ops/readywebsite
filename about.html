@@ -6,13 +6,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Irene Roura García</title>
+    <title>About Irene | FND Specialist Nurse, Coach & Hypnotherapist</title>
+    <meta name="description"
+        content="Irene Roura García: mental health nurse with NHS neuropsychiatry experience, FND specialist, hypnotherapist, wellbeing coach, and author of the FND Care Guide.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="About Irene Roura García">
+    <meta property="og:description"
+        content="Mental health nurse, FND specialist, hypnotherapist, wellbeing coach, and author of the FND Care Guide.">
+    <meta property="og:url" content="https://irenerouragarcia.com/about.html">
+    <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="stylesheet" href="styles.css?v=15">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -37,7 +46,9 @@
         <ul class="nav-links">
             <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
             <li><a href="sessions.html" data-i18n="nav.sessions">Sessions</a></li>
+            <li><a href="results.html" data-i18n="nav.results">Testimonials</a></li>
             <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="book.html" data-i18n="nav.book">Book</a></li>
             <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -57,20 +68,62 @@
                     <div data-i18n="about.full_text">
                         <!-- Content will be injected here by script.js -->
                     </div>
+
+                    <div class="quote-cards" aria-label="Testimonials">
+                        <div class="quote-cards-header" data-i18n="home.quotes_title">Testimonials</div>
+                        <div class="testimonial-box">
+                            <button class="slider-arrow prev" aria-label="Previous testimonial">‹</button>
+                            <div class="testimonial-track-container">
+                                <div class="testimonial-track" data-source="home"></div>
+                            </div>
+                            <button class="slider-arrow next" aria-label="Next testimonial">›</button>
+                        </div>
+                        <a href="results.html" class="quote-cards-more" data-i18n="hero.stories_link">Read more
+                            stories →</a>
+                    </div>
+
+                    <h2 data-i18n="about.credentials_title">Credentials &amp; trust</h2>
+                    <!-- TODO: Irene verify credential wording/titles below (set in script.js, EN + ES) -->
+                    <div data-i18n="about.credentials_html">
+                        <ul class="credentials-list">
+                            <li>Registered General Nurse, specialised in Mental Health — NHS experience in mental
+                                health, neurology and neuropsychiatry, etc.</li>
+                            <li>Hypnotherapist</li>
+                            <li>Wellbeing Coach</li>
+                            <li>Member of the FND UK Network — representing the Royal College of Nursing</li>
+                            <li>Author of the <em>FND Care Guide</em></li>
+                        </ul>
+                    </div>
+
+                    <h2 data-i18n="about.approach_title">My approach</h2>
+                    <div data-i18n="about.approach_html">
+                        <p>I combine clinical experience with mindfulness, CBT-informed and polyvagal-informed
+                            practices, and hypnotherapy — always translated into practical, sustainable steps adapted
+                            to each person's circumstances and energy.</p>
+                    </div>
                 </div>
 
-                <a href="contact.html" class="btn-primary" data-i18n="hero.cta">Get in Touch</a>
+                <div class="cta-row">
+                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary"
+                        target="_blank" rel="noopener" data-i18n="hero.cta">Book Discovery Call</a>
+                </div>
             </div>
         </div>
     </main>
 
+    <div class="signup-band">
+        <p data-i18n="signup.title">Get gentle, practical FND tools in your inbox</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQqC-g87gOfOLopDv-YPVZDtfQHhD2Iso0UI1QvNwn-w5B5A/viewform"
+            target="_blank" rel="noopener" class="btn-primary signup-btn" data-i18n="signup.btn">Join the newsletter</a>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <img src="logo_motif.png" alt="Motif" class="motif-footer">
+        <img src="logo_motif.png" alt="Decorative leaf motif" class="motif-footer">
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=15"></script>
     <script>lucide.createIcons();</script>
 </body>
 
