@@ -17,7 +17,7 @@ const translations = {
             // DRAFT COPY (Aug 2026 SEO pass) — Irene to put in her own voice. Keep in step with index.html.
             intro_title: "Specialist support for living with FND",
             intro_html: "<p>I'm Irene Roura Garc\u00eda, a nurse specialised in mental health, a wellbeing coach, a hypnotherapist and an FND specialist. I spent five years on an NHS inpatient neuropsychiatry ward alongside people living with Functional Neurological Disorder, and I have worked with the condition ever since.</p><p>I work online with people living with FND, and with the people around them, in English and in Spanish \u2014 one to one, in groups, and through courses.</p>",
-            work_title: "How we can work together",
+            work_title: "How I can help",
             work_html: "<p><strong>Sessions.</strong> One-to-one wellbeing coaching, hypnotherapy and FND support, plus group sessions and courses. <a href=\"sessions.html\" class=\"highlight-link\">See the sessions and prices</a>.</p><p><strong>The book.</strong> The <em>FND Care Guide</em>, written with people living with FND. <a href=\"book.html\" class=\"highlight-link\">About the book</a>.</p><p><strong>The free care guide.</strong> Tools, lived experience and support links shared by the FND community. <a href=\"https://fndcareguide.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visit fndcareguide.com</a>.</p>"
         },
         about: {
@@ -164,7 +164,7 @@ const translations = {
             // BORRADOR (revision SEO agosto 2026) — Irene: ponlo en tus palabras.
             intro_title: "Apoyo especializado para vivir con TNF",
             intro_html: "<p>Soy Irene Roura Garc\u00eda, enfermera especializada en salud mental, coach de bienestar, hipnoterapeuta y especialista en Trastorno Neurol\u00f3gico Funcional (TNF). Trabaj\u00e9 durante cinco a\u00f1os en una unidad de hospitalizaci\u00f3n de neuropsiquiatr\u00eda del NHS junto a personas que viven con TNF, y desde entonces sigo trabajando con esta condici\u00f3n.</p><p>Acompa\u00f1o online a personas que viven con TNF y a quienes las rodean, en ingl\u00e9s y en espa\u00f1ol \u2014 de forma individual, en grupo y a trav\u00e9s de cursos.</p>",
-            work_title: "C\u00f3mo podemos trabajar juntas",
+            work_title: "C\u00f3mo puedo ayudarte",
             work_html: "<p><strong>Sesiones.</strong> Sesiones individuales de coaching de bienestar, hipnoterapia y apoyo TNF, adem\u00e1s de sesiones grupales y cursos. <a href=\"sessions.html\" class=\"highlight-link\">Ver las sesiones y los precios</a>.</p><p><strong>El libro.</strong> La <em>FND Care Guide</em>, escrita junto a personas que viven con TNF. <a href=\"book.html\" class=\"highlight-link\">Sobre el libro</a>.</p><p><strong>La gu\u00eda gratuita.</strong> Herramientas, experiencias vividas y enlaces de apoyo compartidos por la comunidad TNF. <a href=\"https://fndcareguide.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visita fndcareguide.com</a>.</p>"
         },
         about: {
