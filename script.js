@@ -16,7 +16,7 @@ const translations = {
             consult_cta: "Consultation"
         },
         about: {
-            title: "About Me",
+            title: "About Irene — FND specialist nurse, coach & hypnotherapist",
             full_text: "<p>I am a nurse specialized in mental health, hypnotherapist, wellbeing coach, and Functional Neurological Disorder (FND) specialist. I have worked as a nurse at NHS mental health, neurology, and neuropsychiatry wards. I spent five years working on an inpatient neuropsychiatric ward supporting people living with FND, where I first encountered the condition and developed a strong commitment to support people living with it.</p><p>From early in my training, I was drawn to approaches that support the mind–body connection and nervous system regulation. I now integrate my clinical experience with hypnotherapy, mindfulness, and polyvagal theory–informed practices. I believe meaningful and lasting change comes from a holistic approach and from focusing on practical, helpful steps that can be adapted to each person’s circumstances.</p><p>Today, I collaborate with FND charities to deliver courses, I  offer one-to-one sessions and run programs for people living with FND worldwide. I am also about to publish a book in collaboration with people with lived experience, and I am a member of the FND UK Network, where I represent the Royal College of Nursing.</p>",
             credentials_title: "Credentials & trust",
             credentials_html: "<ul class=\"credentials-list\"><li>Registered General Nurse, specialised in Mental Health — NHS experience in mental health, neurology and neuropsychiatry, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">view certificate</a>)</li><li>Hypnotherapist (view credentials: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Wellbeing Coach</li><li>Member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — representing the Royal College of Nursing</li><li>Author of the <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
@@ -24,7 +24,7 @@ const translations = {
             approach_html: "<p>I combine clinical experience with mindfulness, CBT-informed and polyvagal-informed practices, and hypnotherapy, amongst other practices that support nervous system regulation and overall wellbeing — always translated into practical, sustainable steps adapted to each person's circumstances, needs and energy.</p><p>My approach is gentle and compassionate: first, I will hear you. From there, I will suggest a path and a plan for us to explore together as we move towards the life you want to live.</p>"
         },
         sessions: {
-            title: "Sessions",
+            title: "FND support sessions, coaching & hypnotherapy",
             intro_html: "<p>I offer support in a range of formats, including one-to-one sessions, regular group meetings and educational programmes.</p><p>Below, you can find examples of some of the support packages that have worked well for other clients. Each package can be tailored to your individual needs, goals and circumstances.</p><p>Please book a discovery call with me so we can discuss the type of support that may be most helpful for you.</p>",
             offer1_title: "Wellbeing Coaching",
             offer1_text: "Personalised sessions designed to support your wellbeing and the management of your symptoms — using practical, sustainable tools from mindfulness, CBT, polyvagal-informed and other nervous system regulation approaches, to help you rebuild safety, control and inner resources in everyday life.",
@@ -73,7 +73,7 @@ const translations = {
             q4_attr: "Group member - Patreon"
         },
         resources: {
-            title: "Resources",
+            title: "Free FND resources",
             text: "Free guides, FND care tools, and mindfulness exercises to calm your mind.",
             item1: "FND Useful Links",
             item2: "Grounding Exercise",
@@ -92,7 +92,7 @@ const translations = {
             btn: "Visit Full Shop"
         },
         results: {
-            title: "Testimonials",
+            title: "What people say about working with Irene",
             f_all: "All",
             f_1to1: "1:1 sessions",
             f_group: "Courses / Group Sessions",
@@ -100,7 +100,7 @@ const translations = {
             load_error: "Stories are temporarily unavailable — please refresh the page, or get in touch."
         },
         book: {
-            title: "FND Care Guide - Book",
+            title: "The FND Care Guide — the book",
             tagline: "Written in collaboration with people living with FND and created with care, clarity, and intention, this guide is a compassionate, practical handbook designed to share with you what has helped other people living with FND manage their symptoms, feel more in control, and improve their wellbeing — and what might help you, too. It has been shaped by the insights and voices of the FND community.",
             inside_title: "What's inside",
             inside_html: "<ul class=\"book-features-list\"><li>Practical tools to help you manage symptoms and feel more in control</li><li>Everyday practices to support your body and mind</li><li>Lived experiences and shared wisdom from the FND community</li><li>Guidance for navigating FND and building your personal toolkit</li><li>A reminder that improvement, connection, and hope are possible</li><li>Messages of support from the community</li></ul>",
@@ -150,7 +150,7 @@ const translations = {
             consult_cta: "Consulta"
         },
         about: {
-            title: "Sobre Mí",
+            title: "Sobre Irene — enfermera especialista en TNF, coach e hipnoterapeuta",
             full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). Mi experiencia profesional incluye salud mental, neurología y neuropsiquiatría dentro del NHS (sistema público de salud en Inglaterra). Trabajé durante cinco años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF donde conocí esta condición por primera vez y desarrollé un fuerte compromiso en apoyar a las personas que lo sufren.</p><p>Desde el inicio de mi formación, me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Actualmente combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge a través de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias de cada persona.</p><p>En la actualidad, colaboro con organizaciones benéficas de TNF impartiendo cursos y también ofrezco programas y sesiones individuales (todo online). Estoy a punto de publicar un libro en colaboración con personas con experiencia vivida de TNF \"FND Care Guide\" y soy miembro de la Red de TNF de Reino Unido (FND UK Network), donde represento la profesión de enfermería.</p>",
             credentials_title: "Credenciales y confianza",
             credentials_html: "<ul class=\"credentials-list\"><li>Enfermera Generalista, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">ver certificado</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — en representación del Royal College of Nursing</li><li>Autora de la <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
@@ -158,7 +158,7 @@ const translations = {
             approach_html: "<p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable y compasivo: primero, te escucharé. A partir de ahí, te propondré un camino y un plan para explorar juntas mientras avanzamos hacia la vida que quieres vivir.</p>"
         },
         sessions: {
-            title: "Sesiones",
+            title: "Sesiones de apoyo TNF, coaching e hipnoterapia",
             intro_html: "<p>Ofrezco apoyo en diversos formatos, incluyendo sesiones individuales, reuniones grupales y programas educativos.</p><p>A continuación encontrarás ejemplos de algunos de los paquetes de apoyo que han funcionado bien para otros clientes. Cada paquete puede adaptarse a tus necesidades, objetivos y circunstancias individuales.</p><p>Reserva una llamada de descubrimiento conmigo para que podamos hablar del tipo de apoyo que puede ser más útil para ti.</p>",
             offer1_title: "Coaching de Bienestar",
             offer1_text: "Sesiones personalizadas diseñadas para apoyar tu bienestar y el manejo de tus síntomas — utilizando herramientas prácticas y sostenibles basadas en mindfulness, TCC, la teoría polivagal y otros enfoques de regulación del sistema nervioso, para ayudarte a reconstruir seguridad, control y recursos internos en tu vida diaria.",
@@ -207,7 +207,7 @@ const translations = {
             q4_attr: "Miembro del grupo - Patreon"
         },
         resources: {
-            title: "Recursos",
+            title: "Recursos gratuitos sobre TNF",
             text: "Guías gratuitas, herramientas de cuidado para TNF y ejercicios de mindfulness para calmar tu mente.",
             item1: "Enlaces FND útiles",
             item2: "Ejercicio de Grounding",
@@ -226,7 +226,7 @@ const translations = {
             btn: "Visitar Tienda Completa"
         },
         results: {
-            title: "Testimonios",
+            title: "Lo que dicen las personas que han trabajado con Irene",
             f_all: "Todos",
             f_1to1: "Sesiones 1:1",
             f_group: "Cursos / Sesiones Grupales",
@@ -234,7 +234,7 @@ const translations = {
             load_error: "Los testimonios no están disponibles temporalmente — actualiza la página o escríbeme."
         },
         book: {
-            title: "FND Care Guide - Libro",
+            title: "The FND Care Guide — el libro",
             tagline: "Escrita en colaboración con personas que viven con TNF y creada con cuidado, claridad e intención, esta guía es un manual compasivo y práctico diseñado para compartir contigo lo que ha ayudado a otras personas que viven con TNF a manejar sus síntomas, sentirse más en control y mejorar su bienestar — y lo que también podría ayudarte a ti. Ha sido moldeada por las voces y experiencias de la comunidad TNF.",
             inside_title: "Qué encontrarás",
             inside_html: "<ul class=\"book-features-list\"><li>Herramientas prácticas para ayudarte a manejar síntomas y sentirte más en control</li><li>Prácticas cotidianas para cuidar tu cuerpo y tu mente</li><li>Experiencias vividas y sabiduría compartida de la comunidad TNF</li><li>Orientación para navegar el TNF y construir tu kit de herramientas personal</li><li>Un recordatorio de que la mejoría, la conexión y la esperanza son posibles</li><li>Mensajes de apoyo de la comunidad</li></ul>",
