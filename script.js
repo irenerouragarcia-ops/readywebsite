@@ -87,6 +87,11 @@ const translations = {
             item2: "Grounding Exercise",
             item3: "FND Care Whatsapp Group",
             item4: "Personalized Hypnotherapy Audio",
+            // DRAFT COPY (Aug 2026 SEO pass) — Irene to reword; keep in step with resources.html.
+            item1_desc: "A shared document collecting the FND links I point people to most — organisations, explanations of the condition, and places to look for support. Opens in Google Docs.",
+            item2_desc: "A short grounding exercise you can try in a couple of minutes, shared as a post on my Instagram.",
+            item3_desc: "A WhatsApp group where people living with FND keep each other company and share what helps. Free to join.",
+            item4_desc: "A hypnotherapy recording made for you, with a script based on what helps you feel calm and supported. This one is paid — the link opens a secure Stripe checkout.",
             more_coming: "More resources coming up soon",
             community_btn: "FND Community and Support",
             viz_title: "FND Keywords and Concepts",
@@ -229,6 +234,11 @@ const translations = {
             item2: "Ejercicio de Grounding",
             item3: "Grupo de WhatsApp FND Care",
             item4: "Audio de Hipnoterapia Personalizada",
+            // BORRADOR (revision SEO agosto 2026) — Irene: ponlo en tus palabras.
+            item1_desc: "Un documento compartido que reúne los enlaces sobre TNF que más recomiendo — organizaciones, explicaciones de la condición y lugares donde buscar apoyo. Se abre en Google Docs.",
+            item2_desc: "Un ejercicio corto de grounding que puedes probar en un par de minutos, publicado en mi Instagram.",
+            item3_desc: "Un grupo de WhatsApp donde personas que viven con TNF se acompañan y comparten lo que les ayuda. Gratuito.",
+            item4_desc: "Una grabación de hipnoterapia hecha para ti, con un guion basado en lo que te ayuda a sentir calma y apoyo. Este recurso es de pago — el enlace abre un pago seguro con Stripe.",
             more_coming: "Más recursos próximamente",
             community_btn: "Comunidad y Apoyo TNF",
             viz_title: "Palabras clave y conceptos - Visualización Interactiva",
