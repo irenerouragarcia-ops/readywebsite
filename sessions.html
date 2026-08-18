@@ -20,6 +20,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=16">
     <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/sessions.html">
+<link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/sesiones.html">
+<link rel="alternate" hreflang="x-default" href="https://irenerouragarcia.com/sessions.html">
 </head>
 
 <body class="lang-en page-sub page-bg-forest bg-pos-center">
@@ -31,7 +34,7 @@
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="divider">|</span>
-                <button class="lang-btn" data-lang="es">ES</button>
+                <a class="lang-btn" data-lang="es" href="es/sesiones.html">ES</a>
             </div>
             <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
                 <span class="bar"></span>
@@ -324,7 +327,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js?v=17"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=17"></script>
     <script>lucide.createIcons();</script>
 </body>
 
