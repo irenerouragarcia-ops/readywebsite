@@ -14,11 +14,15 @@
     <meta property="og:url" content="https://irenerouragarcia.com/resources.html">
     <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
     <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://irenerouragarcia.com/resources.html">
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
     <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/resources.html">
+<link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/recursos.html">
+<link rel="alternate" hreflang="x-default" href="https://irenerouragarcia.com/resources.html">
 </head>
 
 <body class="lang-en page-sub page-bg-forest bg-pos-right">
@@ -30,7 +34,7 @@
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="divider">|</span>
-                <button class="lang-btn" data-lang="es">ES</button>
+                <a class="lang-btn" data-lang="es" href="es/recursos.html">ES</a>
             </div>
             <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
                 <span class="bar"></span>
@@ -53,33 +57,40 @@
 
             <div class="content-glass wide">
 
-                <h1 data-i18n="resources.title">Resources</h1>
+                <h1 data-i18n="resources.title">Free FND resources</h1>
                 <!-- Intro text removed as requested -->
 
+                <!-- DRAFT COPY (Aug 2026 SEO pass): one plain line saying what each resource is,
+                     so the page reads as something rather than a list of four titles. Irene: reword
+                     freely; the EN/ES wording also lives in script.js (resources.itemN_desc). -->
                 <div class="resource-grid-large">
                     <!-- Card 1: FND Useful Links -->
                     <a href="https://docs.google.com/document/d/1gPSCQXM52z4NYnqFV54swUB-IqFehF4R7qHb8TZJXU4/edit?usp=sharing"
                         target="_blank" class="resource-card">
                         <div class="card-icon-frame"></div>
-                        <h3 data-i18n="resources.item1">FND useful links</h3>
+                        <h2 data-i18n="resources.item1">FND useful links</h2>
+                        <p data-i18n="resources.item1_desc">A shared document collecting links to FND organisations, explanations of the condition, and places to look for support.</p>
                     </a>
 
                     <!-- Card 2: Grounding Exercise -->
                     <a href="https://www.instagram.com/p/DTaxbYGDL4n/" target="_blank" class="resource-card">
                         <div class="card-icon-frame"></div>
-                        <h3 data-i18n="resources.item2">Grounding exercise</h3>
+                        <h2 data-i18n="resources.item2">Grounding exercise</h2>
+                        <p data-i18n="resources.item2_desc">A short grounding exercise you can try in a couple of minutes, shared as a post on my Instagram.</p>
                     </a>
 
                     <!-- Card 3: FND Care WhatsApp Group -->
                     <a href="https://chat.whatsapp.com/KcHLvG19NpZ0vfj7BfLONW" target="_blank" class="resource-card">
                         <div class="card-icon-frame"></div>
-                        <h3 data-i18n="resources.item3">FND Care</h3>
+                        <h2 data-i18n="resources.item3">FND Care</h2>
+                        <p data-i18n="resources.item3_desc">A WhatsApp group where I share news and updates.</p>
                     </a>
 
                     <!-- Card 4: Personalized Hypnotherapy Audio -->
                     <a href="https://buy.stripe.com/00wdR1ahN2x48Tr3k1bo402" target="_blank" class="resource-card">
                         <div class="card-icon-frame"></div>
-                        <h3 data-i18n="resources.item4">Personalized Hypnotherapy Audio</h3>
+                        <h2 data-i18n="resources.item4">Personalized Hypnotherapy Audio</h2>
+                        <p data-i18n="resources.item4_desc">A hypnotherapy recording made for you, with a script based on what helps you feel calm and supported. This one is paid. The link opens a secure Stripe checkout.</p>
                     </a>
                 </div>
 
@@ -117,7 +128,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js?v=15"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=18"></script>
     <script>lucide.createIcons();</script>
 </body>
 

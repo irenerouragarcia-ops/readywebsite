@@ -16,13 +16,17 @@
     <meta property="og:url" content="https://irenerouragarcia.com/about.html">
     <meta property="og:image" content="https://irenerouragarcia.com/irene_portrait.png">
     <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://irenerouragarcia.com/about.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
     <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/about.html">
+<link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/sobre-mi.html">
+<link rel="alternate" hreflang="x-default" href="https://irenerouragarcia.com/about.html">
 </head>
 
 <body class="lang-en page-about">
@@ -36,7 +40,7 @@
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="divider">|</span>
-                <button class="lang-btn" data-lang="es">ES</button>
+                <a class="lang-btn" data-lang="es" href="es/sobre-mi.html">ES</a>
             </div>
             <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
                 <span class="bar"></span>
@@ -60,13 +64,38 @@
             <div class="content-glass">
 
                 <!-- Portrait Placeholder -->
-                <img src="irene_portrait.png" alt="Irene Roura García" class="about-portrait">
+                <img src="irene_portrait.png" alt="Irene Roura García, FND specialist nurse and hypnotherapist" class="about-portrait">
 
-                <h1 data-i18n="about.title">About Me</h1>
+                <h1 data-i18n="about.title">About Irene — FND specialist, nurse, coach &amp; hypnotherapist</h1>
 
                 <div class="text-content">
+                    <!--
+                    DRAFT COPY (Aug 2026 SEO pass) — this text used to exist only inside
+                    script.js, so search engines read an empty page here. It is now in the
+                    markup as well, and slightly expanded. It restates only what the site
+                    already says about Irene — no new credentials. Irene: reword freely,
+                    then keep script.js (about.full_text, EN + ES) in step with it.
+                    -->
                     <div data-i18n="about.full_text">
-                        <!-- Content will be injected here by script.js -->
+                        <p>I am a nurse specialised in mental health, a hypnotherapist, a wellbeing coach and a
+                            Functional Neurological Disorder (FND) specialist. I have worked as a nurse on NHS
+                            mental health, neurology and neuropsychiatry wards. I spent four years on an inpatient
+                            neuropsychiatric ward supporting people living with FND, where I first met the
+                            condition and where my commitment to supporting people living with it began.</p>
+                        <p>From early in my training I was drawn to approaches that support the mind–body
+                            connection and the regulation of the nervous system. I now bring my clinical experience
+                            together with hypnotherapy, mindfulness and polyvagal-informed practices. I believe
+                            meaningful and lasting change comes from a holistic approach, and from focusing on
+                            practical, helpful steps that can be adapted to each person's circumstances and energy.</p>
+                        <p>Today I work with people living with FND around the world. I offer one-to-one sessions,
+                            I run group sessions and programmes, and I collaborate with FND charities to deliver
+                            courses. I work in English and in Spanish, and often with families as well as with the
+                            person who has the diagnosis.</p>
+                        <p>I am the author of the <em>FND Care Guide</em>, written in collaboration with people who
+                            have lived experience of FND, and a member of the FND UK Network, where I represent the
+                            Royal College of Nursing. Whether you are newly diagnosed, still waiting for answers, or
+                            years into living with FND, you are welcome to book a free consultation and talk things
+                            through with me.</p>
                     </div>
 
                     <div class="quote-cards" aria-label="Testimonials">
@@ -123,7 +152,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js?v=15"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=18"></script>
     <script>lucide.createIcons();</script>
 </body>
 

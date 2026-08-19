@@ -449,7 +449,8 @@ footer {
     color: var(--color-text-primary) !important;
 }
 
-.text-content h3 {
+.text-content h3,
+.session-titles-row h2 {
     color: var(--color-accent);
     margin-bottom: 0.5rem;
     margin-top: 3rem;
@@ -578,7 +579,8 @@ a.resource-card:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.resource-card h3 {
+.resource-card h3,
+.resource-card h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
@@ -780,7 +782,8 @@ a.resource-card:hover {
     gap: 1rem;
 }
 
-.header-content h3 {
+.header-content h3,
+.header-content h2 {
     font-size: 1.1rem;
     font-family: var(--font-body);
     /* Modern feel */
@@ -837,7 +840,8 @@ a.resource-card:hover {
     box-shadow: 0 10px 30px rgba(10, 75, 72, 0.05);
 }
 
-.shop-disclaimer h3 {
+.shop-disclaimer h3,
+.shop-disclaimer h2 {
     font-family: var(--font-heading);
     color: var(--color-text-primary);
     font-size: 1.4rem;
@@ -1466,7 +1470,8 @@ a.resource-card:hover {
 }
 
 
-.contact-card h3 {
+.contact-card h3,
+.contact-card h2 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     color: var(--color-accent);
@@ -1477,7 +1482,8 @@ a.resource-card:hover {
 }
 
 /* Icon next to text, no background */
-.contact-card h3 i {
+.contact-card h3 i,
+.contact-card h2 i {
     width: 20px;
     height: 20px;
     color: var(--color-accent);
@@ -2042,6 +2048,8 @@ a.resource-card:hover {
 .package-group-title {
     font-family: var(--font-heading);
     font-size: 1rem;
+    font-weight: 700;
+    /* keeps the old <h4> weight now that these are <h3> */
     margin: 0.9rem 0 0.2rem;
     color: var(--color-text-primary);
     text-align: left;

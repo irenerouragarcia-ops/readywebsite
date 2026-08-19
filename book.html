@@ -14,6 +14,7 @@
     <meta property="og:url" content="https://irenerouragarcia.com/book.html">
     <meta property="og:image" content="https://irenerouragarcia.com/book_cover.png">
     <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://irenerouragarcia.com/book.html">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,8 +37,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
     <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/book.html">
+<link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/libro.html">
+<link rel="alternate" hreflang="x-default" href="https://irenerouragarcia.com/book.html">
 </head>
 
 <body class="lang-en page-sub page-bg-forest bg-pos-right">
@@ -49,7 +53,7 @@
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="divider">|</span>
-                <button class="lang-btn" data-lang="es">ES</button>
+                <a class="lang-btn" data-lang="es" href="es/libro.html">ES</a>
             </div>
             <div class="menu-toggle" id="menuToggle" role="button" tabindex="0">
                 <span class="bar"></span>
@@ -71,7 +75,7 @@
         <section class="organic-section center-align">
             <div class="content-glass wide">
 
-                <h1 data-i18n="book.title">FND Care Guide - Book</h1>
+                <h1 data-i18n="book.title">The FND Care Guide — the book</h1>
 
                 <div class="book-layout">
                     <div>
@@ -81,6 +85,9 @@
                             <a href="https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=bookpage"
                                 target="_blank" rel="noopener" class="btn-primary" data-i18n="book.buy_btn">First
                                 Special Edition</a>
+                            <a href="https://www.amazon.com/FND-Care-Guide-Functional-Neurological/dp/B0HC7JM87G"
+                                target="_blank" rel="noopener" class="btn-primary" data-i18n="book.amazon_btn"
+                                style="margin-top: 0.6rem;">Get it on Amazon</a>
                         </div>
                     </div>
 
@@ -142,7 +149,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script src="script.js?v=15"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=18"></script>
     <script>lucide.createIcons();</script>
 </body>
 
