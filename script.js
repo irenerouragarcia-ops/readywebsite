@@ -16,49 +16,42 @@ const translations = {
             consult_cta: "Consultation",
             // DRAFT COPY (Aug 2026 SEO pass) — Irene to put in her own voice. Keep in step with index.html.
             intro_title: "Specialist support for FND",
-            intro_html: "<p>I'm Irene Roura Garc\u00eda, a nurse specialised in mental health, a wellbeing coach, a hypnotherapist and an FND specialist. I spent four years on an NHS inpatient neuropsychiatry ward alongside people living with Functional Neurological Disorder, and I have worked with the condition ever since.</p><p>I work online with people living with FND, and with their carers and families, in English and in Spanish, one to one, in groups, and through courses.</p>",
+            intro_html: "<p>I'm Irene Roura Garc\u00eda, a nurse specialised in mental health, a wellbeing coach, a hypnotherapist and an FND specialist. I spent four years on an NHS inpatient neuropsychiatry ward alongside people living with Functional Neurological Disorder, and I have worked with the condition ever since.</p><p>I work online helping people living with FND regain control over their lives and reduce their symptoms, in English and in Spanish, one to one, in groups, and through courses.</p>",
             work_title: "How I can help",
-            work_html: "<p><strong>Sessions.</strong> One-to-one wellbeing coaching, hypnotherapy and FND support, plus group sessions and courses. <a href=\"sessions.html\" class=\"highlight-link\">See the sessions and prices</a>.</p><p><strong>The book.</strong> The <em>FND Care Guide</em>, written with people living with FND. <a href=\"book.html\" class=\"highlight-link\">About the book</a>.</p><p><strong>The free FND care guide.</strong> Tools, lived experience and support links shared by the FND community. <a href=\"https://fndcareguide.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visit fndcareguide.com</a>.</p>"
+            work_html: "<p><strong>Sessions.</strong> One-to-one coaching, psychoeducation, hypnotherapy and specialised FND support, plus group sessions and courses. <a href=\"sessions.html\" class=\"highlight-link\"><strong>See sessions and prices</strong></a>.</p><p><strong>The book.</strong> The <em>FND Care Guide</em>, written with people living with FND. <a href=\"book.html\" class=\"highlight-link\">About the book</a>.</p><p><strong>The free FND care guide.</strong> Tools, lived experience and support links shared by the FND community. <a href=\"https://fndcareguide.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visit fndcareguide.com</a>.</p>"
         },
         about: {
-            title: "Nurse, coach & hypnotherapist.\nFND Specialist",
+            title_html: "Nurse, coach and hypnotherapist.<br><span class=\"specialist-badge\">FND Specialist</span>",
             full_text: "<p>I am a nurse specialised in mental health, a hypnotherapist, a wellbeing coach and a Functional Neurological Disorder (FND) specialist. I have worked as a nurse on NHS mental health, neurology and neuropsychiatry wards. I spent four years on an inpatient neuropsychiatric ward supporting people living with FND, where I first met the condition and where my commitment to supporting people living with it began.</p><p>From early in my training I was drawn to approaches that support the mind–body connection and the regulation of the nervous system. I now bring my clinical experience together with hypnotherapy, mindfulness and polyvagal-informed practices. I believe meaningful and lasting change comes from a holistic approach, and from focusing on practical, helpful steps that can be adapted to each person's circumstances and energy.</p><p>Today I work with people living with FND around the world. I offer one-to-one sessions, I run group sessions and programmes, and I collaborate with FND charities to deliver courses. I work in English and in Spanish, and often with families as well as with the person who has the diagnosis.</p><p>I am the author of the <em>FND Care Guide</em>, written in collaboration with people who have lived experience of FND, and a member of the FND UK Network, where I represent the Royal College of Nursing. Whether you are newly diagnosed, still waiting for answers, or years into living with FND, you are welcome to book a free consultation and talk things through with me.</p>",
             credentials_title: "Credentials & trust",
-            credentials_html: "<ul class=\"credentials-list\"><li>Registered General Nurse, specialised in Mental Health — NHS experience in mental health, neurology and neuropsychiatry, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">view certificate</a>)</li><li>Hypnotherapist (view credentials: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Wellbeing Coach</li><li>Member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — representing the Royal College of Nursing</li><li>Author of the <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
+            credentials_html: "<ul class=\"credentials-list\"><li>Registered General Nurse, specialised in Mental Health — NHS experience in mental health, neurology and neuropsychiatry, etc. (<a href=\"certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">NMC entry</a>)</li><li>Hypnotherapist (view credentials: <a href=\"certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Wellbeing Coach</li><li>Member of the <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — representing the Royal College of Nursing</li><li>Author of the <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
             approach_title: "My approach",
-            approach_html: "<p>I combine clinical experience with mindfulness, CBT-informed and polyvagal-informed practices, and hypnotherapy, amongst other practices that support nervous system regulation and overall wellbeing — always translated into practical, sustainable steps adapted to each person's circumstances, needs and energy.</p><p>My approach is gentle and compassionate: first, I will hear you. From there, I will suggest a path and a plan for us to explore together as we move towards the life you want to live.</p>"
+            approach_html: "<p>I combine clinical experience with mindfulness, CBT-informed and polyvagal-informed practices, and hypnotherapy, amongst other practices that support nervous system regulation and overall wellbeing — always translated into practical, sustainable steps adapted to each person's circumstances, needs and energy.</p><p>My approach is gentle, compassionate and solution focused. Once I have understood your situation and goals, I will suggest a plan to help you move to where you want to be.</p>"
         },
         sessions: {
             title: "FND Support Sessions, Coaching and Hypnotherapy",
-            intro_html: "<p>I offer support in a range of formats, including one-to-one sessions, regular group meetings and educational programmes.</p><p>Below, you can find examples of some of the support packages that have worked well for other clients. Each package can be tailored to your individual needs, goals and circumstances.</p><p>When you book your discovery call we can meet and explore the type of support that may be most helpful for you.</p>",
-            offer1_title: "Wellbeing coaching",
+            intro_html: "<p>I offer support in a range of formats, including one-to-one sessions, regular support groups and educational programmes.</p><p>When you book your discovery call we can meet and explore the type of support that may be most helpful for you.</p>",
+            offer1_title: "Coaching",
             offer1_text: "Personalised sessions designed to support your wellbeing and the management of your symptoms — using practical, sustainable tools from mindfulness, CBT, polyvagal-informed and other nervous system regulation approaches, to help you rebuild safety, control and inner resources in everyday life.",
-            offer2_title: "Hypnotherapy for FND",
-            offer2_text: "Subconscious-focused (similar to relaxation-based) work to reframe unhelpful patterns and support long-standing conditions and associated symptoms such as anxiety and low mood. Sessions use personalised scripts tailored to what helps you feel calm, safe, and supported.",
+            offer2_title: "Hypnotherapy",
+            offer2_text: "Subconscious-focused work (similar to relaxation) to reframe unhelpful patterns, support the brain's learning processes, work towards reducing how intense and how frequent symptoms are, and build confidence. Sessions use personalised scripts tailored to what helps you feel calm, safe and supported. Many people find it especially helpful with functional seizures.",
             offer3_title: "FND support sessions",
-            offer3_text: "Specialist guidance for people living with Functional Neurological Disorder. Support focused on understanding and managing your symptoms, building confidence, improving well-being and reclaiming a sense of control in your life.",
+            offer3_text: "Specialist guidance for people living with Functional Neurological Disorder. Support focused on understanding your nervous system, building confidence, reducing symptoms and regaining control.",
             btn: "Book Discovery Call",
             // DRAFT COPY (Aug 2026 SEO pass) — Irene to reword; keep in step with sessions.html.
             faq_title: "Questions people often ask",
-            faq_html: "<h3>How long is a session?</h3><p>Most sessions are one hour. There is also a longer 1.5-hour session that includes a personalised hypnotherapy audio recording for you to keep. Prices for single sessions and for packages are listed above.</p><h3>What happens in a wellbeing coaching session?</h3><p>We start from what is going on for you, and work with practical, sustainable tools drawn from mindfulness, CBT-informed and polyvagal-informed approaches. Sessions inside a package are weekly, and I send handouts and resources by email after each one.</p><h3>What is a hypnotherapy session like?</h3><p>It is subconscious-focused work, very similar to relaxation. The scripts are personalised to what helps you feel calm, safe and supported, and some sessions include a recording you can listen to at home.</p><h3>Do you run group sessions and courses?</h3><p>Yes — weekly closed group sessions and regular open monthly ones, plus two courses: Mindfulness for Positive Self-coaching, and FND Self-care and the Nervous System. You can join the groups and get the course material through my Patreon.</p><h3>Can we work in Spanish, and how do we start?</h3><p>I work in English and in Spanish. The first step is a free discovery call, where we talk about what is going on for you and what kind of support might suit you best.</p>",
+            faq_html: "<h3>How long is a session?</h3><p>Every session is one hour. Prices for single sessions and for packs are listed above.</p><h3>What happens in a session?</h3><p>Sessions combine coaching, psychoeducation and hypnotherapy, depending on each person's symptoms and needs. During sessions we work with practical, sustainable tools drawn from CBT-informed and polyvagal-informed approaches and mindfulness. Pack sessions are weekly, and after each one you receive an email with a session summary, handouts and resources.</p><h3>What is the hypnotherapy part like?</h3><p>It is subconscious-focused work, very similar to relaxation. The scripts are personalised to what helps you feel calm, safe and supported. Session recordings are available for an extra £25.</p><h3>Do you run group sessions and courses?</h3><p>Yes, I run weekly and monthly group sessions as well as courses. You can join the groups and get the course material through <a href=\"https://www.patreon.com/cw/IreneRouraGarcia/membership\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">my Patreon</a>.</p><h3>Can we work in Spanish, and how do we start?</h3><p>Yes, I work in English and in Spanish. The first step is a 15 minute call, where we talk about what is going on for you and I share with you how I can help you.</p>",
 
             sessions_footer_note: "*All sessions within the packages are weekly, one hour long and include follow-up emails with handouts and additional resources after each session.",
 
             opt1_title: "1:1 sessions and packages",
             opt1_item1: "1 hour session",
-            opt1_item1_note: "(wellbeing coaching)",
-            opt1_item2: "1.5 hour session + hypnotherapy recording",
-            opt1_item2_note: "(wellbeing coaching + hypnotherapy)",
-            opt1_group1_title: "Wellbeing Coaching Packs",
-            opt1_pack3: "3 sessions pack",
-            opt1_pack3_note: "(wellbeing coaching)",
+            opt1_group1_title: "Session packs",
+            opt1_pack3: "3 session pack",
             opt1_pack6: "6 sessions pack",
-            opt1_pack6_note: "(includes 1 hypnotherapy session)",
-            opt1_group2_title: "Coaching & Hypnotherapy Packs",
-            opt1_special_html: "<ul class=\"package-features\"><li>6 × 1-hour weekly sessions</li><li>3 hypnotherapy sessions integrated within the process</li><li>Handouts and resources after each session</li><li>2 personalised audio recordings to use between sessions and afterwards</li></ul>",
-            opt1_special_total: "Total",
             opt1_group3_title: "Family Packs",
-            opt1_family_link: "Get in touch to tailor yours",
+            opt1_family_sub: "Supporting you and your main carer or supporter.",
+            opt1_family_link: "Get in touch",
             opt1_note: "*All sessions within the packages are weekly, one hour long and include follow-up emails with handouts and additional resources after each session.",
             opt2_title: "Group sessions and courses (English and Spanish)",
             opt2_courses_title: "Courses:",
@@ -81,7 +74,7 @@ const translations = {
             q4_attr: "Group member - Patreon"
         },
         resources: {
-            title: "Free FND resources",
+            title: "FND Resources",
             text: "Free guides, FND care tools, and mindfulness exercises to calm your mind.",
             item1: "FND Useful Links",
             item2: "Grounding Exercise",
@@ -93,7 +86,7 @@ const translations = {
             item3_desc: "A WhatsApp group where I share news and updates.",
             item4_desc: "A hypnotherapy recording made for you, with a script based on what helps you feel calm and supported. This one is paid. The link opens a secure Stripe checkout.",
             more_coming: "More resources coming up soon",
-            community_btn: "FND Community and Support",
+            community_btn: "FND group sessions",
             viz_title: "FND Keywords and Concepts",
             view_btn: "View Link",
             join_btn: "Join Group",
@@ -135,6 +128,23 @@ const translations = {
             audio_title: "Get your free relaxation audio",
             audio_btn: "Get the audio"
         },
+        contactbox: {
+            cta: "Get in touch",
+            cta_irene: "Contact Irene",
+            sent: "Thank you \u2014 your message is on its way to Irene.",
+            title: "Get in touch",
+            intro: "Send Irene a message, or call her directly.",
+            name: "Your name",
+            email: "Your email",
+            message: "Your message",
+            send: "Send email",
+            phone_label: "Call Irene",
+            email_label: "Email",
+            call_label: "Free discovery call",
+            call_value: "Book a time that suits you",
+            subject: "Website enquiry",
+            close: "Close"
+        },
         contact: {
             title: "Contact",
             text: "Subscribe to the newsletter or get in touch below.",
@@ -164,51 +174,44 @@ const translations = {
             consult_cta: "Consulta",
             // BORRADOR (revision SEO agosto 2026) — Irene: ponlo en tus palabras.
             intro_title: "Apoyo especializado Trastorno Neurológico Funcional (TNF)",
-            intro_html: "<p>Soy Irene Roura Garc\u00eda, enfermera especializada en salud mental, coach de bienestar, hipnoterapeuta y especialista en Trastorno Neurol\u00f3gico Funcional (TNF). Trabaj\u00e9 durante cuatro a\u00f1os en una unidad de hospitalizaci\u00f3n de neuropsiquiatr\u00eda del NHS junto a personas que viven con TNF, y desde entonces sigo trabajando con esta condici\u00f3n.</p><p>Acompa\u00f1o online a personas con TNF y a sus familiares y cuidadores, en ingl\u00e9s y en espa\u00f1ol, de forma individual, en grupo y a trav\u00e9s de cursos.</p>",
+            intro_html: "<p>Soy Irene Roura Garc\u00eda, enfermera especializada en salud mental, coach de bienestar, hipnoterapeuta y especialista en Trastorno Neurol\u00f3gico Funcional (TNF). Trabaj\u00e9 durante cuatro a\u00f1os en una unidad de hospitalizaci\u00f3n de neuropsiquiatr\u00eda del NHS junto a personas que viven con TNF, y desde entonces sigo trabajando con esta condici\u00f3n.</p><p>Acompa\u00f1o online a personas que viven con el TNF para que recuperen el control de su vida y reduzcan sus s\u00edntomas, en ingl\u00e9s y en espa\u00f1ol, de forma individual, en grupo y a trav\u00e9s de cursos.</p>",
             work_title: "C\u00f3mo puedo ayudarte",
-            work_html: "<p><strong>Sesiones.</strong> Sesiones individuales de coaching de bienestar, hipnoterapia y apoyo TNF, adem\u00e1s de sesiones grupales y cursos. <a href=\"sesiones.html\" class=\"highlight-link\">Ver las sesiones y los precios</a>.</p><p><strong>El libro.</strong> <em>FND Care Guide</em>, escrita junto a personas que viven con TNF. Pr\u00f3ximamente en espa\u00f1ol. <a href=\"libro.html\" class=\"highlight-link\">Sobre el libro</a>.</p><p><strong>La gu\u00eda gratuita.</strong> Herramientas, experiencias vividas y enlaces de apoyo compartidos por la comunidad TNF. <a href=\"https://guiadecuidadotnf.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visita guiadecuidadotnf.com</a>.</p>"
+            work_html: "<p><strong>Sesiones.</strong> Coaching individual, psicoeducaci\u00f3n, hipnoterapia y apoyo especializado en el TNF, adem\u00e1s de sesiones grupales y cursos. <a href=\"sesiones.html\" class=\"highlight-link\"><strong>Ver sesiones y precios</strong></a>.</p><p><strong>El libro.</strong> <em>FND Care Guide</em>, escrita junto a personas que viven con TNF. Pr\u00f3ximamente en espa\u00f1ol. <a href=\"libro.html\" class=\"highlight-link\">Sobre el libro</a>.</p><p><strong>La gu\u00eda gratuita.</strong> Herramientas, experiencias vividas y enlaces de apoyo compartidos por la comunidad TNF. <a href=\"https://guiadecuidadotnf.com\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">Visita guiadecuidadotnf.com</a>.</p>"
         },
         about: {
-            title: "Enfermera, coach e hipnoterapeuta.\nEspecialista en TNF",
+            title_html: "Enfermera, coach e hipnoterapeuta.<br><span class=\"specialist-badge\">Especialista en TNF</span>",
             full_text: "<p>Soy enfermera especializada en salud mental, hipnoterapeuta, coach de bienestar y especialista en Trastorno Neurológico Funcional (TNF). He trabajado como enfermera en unidades de salud mental, neurología y neuropsiquiatría del NHS (el sistema público de salud en Inglaterra). Pasé cuatro años en una unidad de hospitalización de neuropsiquiatría apoyando a personas que viven con TNF, donde conocí esta condición por primera vez y donde nació mi compromiso de acompañar a quienes viven con ella.</p><p>Desde el inicio de mi formación me interesaron los enfoques que apoyan la conexión mente-cuerpo y la regulación del sistema nervioso. Hoy combino mi experiencia clínica con hipnoterapia, mindfulness y prácticas basadas en la teoría polivagal. Creo que el cambio profundo y duradero surge de un enfoque holístico y de centrarse en pasos prácticos y útiles, adaptados a las circunstancias y a la energía de cada persona.</p><p>Actualmente acompaño a personas que viven con TNF en distintos países del mundo, ayudándoles a recuperar su autonomía, control, bienestar y regulación. Ofrezco sesiones individuales, facilito sesiones y programas de grupo, y colaboro con organizaciones benéficas de TNF impartiendo cursos. Trabajo en inglés y en español, y a menudo también con las familias y cuidadores.</p><p>Soy autora del libro <em>FND Care Guide</em> (escrito en colaboración con personas con experiencia vivida de TNF) y miembro de la FND UK Network, donde represento al Royal College of Nursing.</p><p>Tanto si acabas de recibir el diagnóstico, como si sigues esperando respuestas o llevas años viviendo con TNF, te animo a contactar conmigo y reservar una consulta gratuita, independientemente de los síntomas. He conocido y apoyado a muchas personas con síntomas diferentes. Estaré encantada de conocerte.</p>",
             credentials_title: "Credenciales y confianza",
-            credentials_html: "<ul class=\"credentials-list\"><li>Enfermera, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href=\"../certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">Certificado</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href=\"../certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"../certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — en representación del Real Colegio de Enfermería en UK</li><li>Autora del libro <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
+            credentials_html: "<ul class=\"credentials-list\"><li>Enfermera, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href=\"../certificates/nursing-certificate.pdf\" target=\"_blank\" class=\"highlight-link\">Registro NMC</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href=\"../certificates/hpd-nch.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — NCH</a> · <a href=\"../certificates/hpd-uk-academy.pdf\" target=\"_blank\" class=\"highlight-link\">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href=\"https://ukfndnetwork.org/\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">FND UK Network</a> — en representación del Real Colegio de Enfermería en UK</li><li>Autora del libro <a href=\"https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&utm_medium=aboutpage\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\"><em>FND Care Guide</em></a></li></ul>",
             approach_title: "Mi enfoque",
-            approach_html: "<p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable y compasivo: primero, te escucho y te entiendo. A partir de ahí, te propongo un camino y un plan para explorar junt@s mientras avanzamos hacia la vida que quieres vivir.</p>"
+            approach_html: "<p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable, compasivo y centrado en soluciones. Una vez que he entendido tu situación y tus objetivos, te propongo un plan para ayudarte a llegar adonde quieres estar.</p>"
         },
         sessions: {
             title: "Sesiones de apoyo TNF, coaching e hipnoterapia",
-            intro_html: "<p>Ofrezco apoyo en diversos formatos, incluyendo sesiones individuales, reuniones grupales y programas educativos.</p><p>A continuación encontrarás ejemplos de algunos de los paquetes de apoyo que han funcionado bien para otros clientes. Cada paquete puede adaptarse a tus necesidades, objetivos y circunstancias individuales.</p><p>Reserva una llamada de descubrimiento conmigo para que podamos hablar del tipo de apoyo que puede ser más útil para ti.</p>",
-            offer1_title: "Coaching de bienestar",
+            intro_html: "<p>Ofrezco apoyo en diversos formatos, incluyendo sesiones individuales, grupos de apoyo periódicos y programas educativos.</p><p>Reserva una llamada de descubrimiento conmigo para que podamos hablar del tipo de apoyo que puede ser más útil para ti.</p>",
+            offer1_title: "Coaching",
             offer1_text: "Sesiones personalizadas diseñadas para apoyar tu bienestar y el manejo de tus síntomas — utilizando herramientas prácticas y sostenibles basadas en mindfulness, TCC, la teoría polivagal y otros enfoques de regulación del sistema nervioso, para ayudarte a reconstruir seguridad, control y recursos internos en tu vida diaria.",
-            offer2_title: "Hipnoterapia para el TNF",
-            offer2_text: "Trabajo enfocado en el subconsciente (similar a la relajación) para reencuadrar patrones poco útiles y apoyar condiciones de larga duración y síntomas asociados como ansiedad y bajo estado de ánimo. Las sesiones utilizan guiones personalizados adaptados a lo que te ayuda a sentir calma, seguridad y apoyo.",
+            offer2_title: "Hipnoterapia",
+            offer2_text: "Trabajo enfocado en el subconsciente (similar a la relajación) para reencuadrar patrones poco útiles, acompañar los procesos de aprendizaje del cerebro, trabajar hacia una menor intensidad y frecuencia de los síntomas, y ganar confianza. Las sesiones utilizan guiones personalizados adaptados a lo que te ayuda a sentir calma, seguridad y apoyo. Muchas personas lo encuentran especialmente útil con las crisis funcionales.",
             offer3_title: "Sesiones de apoyo TNF",
-            offer3_text: "Acompañamiento especializado para personas que viven con Trastorno Neurológico Funcional. Un apoyo centrado en comprender tus síntomas, fortalecer la confianza y recuperar una sensación de control sobre tu vida. (Sesiones de grupo e individuales)",
+            offer3_text: "Acompañamiento especializado para personas que viven con el Trastorno Neurológico Funcional. Un apoyo centrado en comprender tu sistema nervioso, fortalecer la confianza, reducir los síntomas y recuperar el control. (Sesiones de grupo e individuales)",
             btn: "Reservar Llamada",
             // BORRADOR (revision SEO agosto 2026) — Irene: ponlo en tus palabras.
             faq_title: "Preguntas frecuentes",
-            faq_html: "<h3>¿Cuánto dura una sesión?</h3><p>La mayoría de las sesiones duran una hora. También hay una sesión más larga, de 1,5 horas, que incluye una grabación de hipnoterapia personalizada para que la conserves. Los precios de las sesiones sueltas y de los packs están más arriba.</p><h3>¿Qué ocurre en una sesión de coaching de bienestar?</h3><p>Partimos de lo que te está pasando y trabajamos con herramientas prácticas y sostenibles basadas en mindfulness y en enfoques informados por la TCC y la teoría polivagal. Las sesiones dentro de un pack son semanales, y después de cada una te envío material y recursos por correo.</p><h3>¿Cómo es una sesión de hipnoterapia?</h3><p>Es un trabajo enfocado en el subconsciente, más cercano a una relajación profunda que a nada espectacular. Los guiones se personalizan según lo que te ayuda a sentir calma, seguridad y apoyo, y algunas sesiones incluyen una grabación que puedes escuchar en casa.</p><h3>¿Facilitas sesiones de grupo y cursos?</h3><p>Sí — sesiones grupales semanales en grupo cerrado y sesiones abiertas mensuales, además de dos cursos: Mindfulness para el Autocoaching Positivo, y Autocuidado TNF y el Sistema Nervioso. Puedes unirte a los grupos y acceder al material de los cursos a través de mi Patreon.</p><h3>¿Podemos trabajar en español? ¿Cómo empezamos?</h3><p>Trabajo en inglés y en español. El primer paso es una llamada de descubrimiento gratuita, en la que hablamos de lo que te está pasando y del tipo de apoyo que puede encajar mejor contigo.</p>",
+            faq_html: "<h3>¿Cuánto dura una sesión?</h3><p>Todas las sesiones duran una hora. Los precios de las sesiones sueltas y de los packs están más arriba.</p><h3>¿Qué ocurre en una sesión?</h3><p>Las sesiones combinan coaching, psicoeducación e hipnoterapia, según los síntomas y las necesidades de cada persona. En ellas trabajamos con herramientas prácticas y sostenibles basadas en los principios de la TCC, en enfoques informados por la teoría polivagal y en mindfulness. Las sesiones de los packs son semanales, y después de cada una recibes un correo con un resumen de la sesión, material y recursos.</p><h3>¿Cómo es la parte de hipnoterapia?</h3><p>Es un trabajo enfocado en el subconsciente, muy parecido a una relajación. Los guiones se personalizan según lo que te ayuda a sentir calma, seguridad y apoyo. Las grabaciones de la sesión están disponibles por 25 £ adicionales.</p><h3>¿Facilitas sesiones de grupo y cursos?</h3><p>Sí, facilito sesiones de grupo semanales y mensuales, además de cursos. Puedes unirte a los grupos y acceder al material de los cursos a través de <a href=\"https://www.patreon.com/cw/IreneRouraGarcia/membership\" target=\"_blank\" rel=\"noopener\" class=\"highlight-link\">mi Patreon</a>.</p><h3>¿Podemos trabajar en español? ¿Cómo empezamos?</h3><p>Sí, trabajo en inglés y en español. El primer paso es una llamada de 15 minutos, en la que hablamos de lo que te está pasando y te cuento cómo puedo ayudarte.</p>",
 
             sessions_footer_note: "*Todas las sesiones dentro de los paquetes son semanales, de una hora de duración e incluyen correos de seguimiento con folletos y recursos adicionales después de cada sesión.",
 
             opt1_title: "Sesiones 1:1 y packs",
             opt1_item1: "Sesión 1 hora",
-            opt1_item1_note: "(coaching de bienestar)",
-            opt1_item2: "Sesión 1.5 horas + grabación de hipnoterapia",
-            opt1_item2_note: "(coaching de bienestar + hipnoterapia)",
-            opt1_group1_title: "Packs de Coaching de Bienestar",
+            opt1_group1_title: "Packs de sesiones",
             q5: "Las sesiones individuales me apoyaron en todos los sentidos: me sentí comprendida y siempre recibí herramientas prácticas que me ayudaron.",
             q5_attr: "Cliente 1:1",
             opt1_pack3: "Pack 3 sesiones",
-            opt1_pack3_note: "(coaching de bienestar)",
             opt1_pack6: "Pack 6 sesiones",
-            opt1_pack6_note: "(incluye 1 sesión de hipnoterapia)",
-            opt1_group2_title: "Packs de Coaching e Hipnoterapia",
-            opt1_special_html: "<ul class=\"package-features\"><li>6 sesiones semanales de 1 hora</li><li>3 sesiones de hipnoterapia integradas en el proceso</li><li>Material y recursos después de cada sesión</li><li>2 grabaciones de audio personalizadas para usar entre sesiones y después</li></ul>",
-            opt1_special_total: "Total",
             opt1_group3_title: "Packs Familiares",
-            opt1_family_link: "Ponte en contacto para adaptar el tuyo",
+            opt1_family_sub: "Un acompañamiento para ti y para tu cuidador o persona de apoyo principal.",
+            opt1_family_link: "Ponte en contacto",
             opt1_note: "*Todas las sesiones de los paquetes son semanales, de una hora de duración e incluyen correos de seguimiento con material y recursos adicionales después de cada sesión",
             opt2_title: "Sesiones grupales y cursos (inglés y español)",
             opt2_courses_title: "Cursos:",
@@ -229,9 +232,9 @@ const translations = {
             q4_attr: "Miembro del grupo - Patreon"
         },
         resources: {
-            title: "Recursos gratuitos sobre TNF",
+            title: "Recursos TNF",
             text: "Guías gratuitas, herramientas de cuidado para TNF y ejercicios de mindfulness para calmar tu mente.",
-            item1: "Enlaces FND útiles",
+            item1: "Enlaces TNF útiles",
             item2: "Ejercicio de Grounding",
             item3: "Grupo de WhatsApp FND Care",
             item4: "Audio de Hipnoterapia Personalizada",
@@ -241,7 +244,7 @@ const translations = {
             item3_desc: "Un grupo de WhatsApp donde comparto novedades y noticias.",
             item4_desc: "Una grabación de hipnoterapia hecha para ti, con un guion basado en lo que te ayuda a sentir calma y apoyo. Este recurso es de pago. El enlace abre un pago seguro con Stripe.",
             more_coming: "Más recursos próximamente",
-            community_btn: "Comunidad y Apoyo TNF",
+            community_btn: "Sesiones de grupo TNF",
             viz_title: "Palabras clave y conceptos - Visualización Interactiva",
             view_btn: "Ver enlace",
             join_btn: "Unirse al grupo",
@@ -282,6 +285,23 @@ const translations = {
             btn: "Suscríbete al boletín",
             audio_title: "Consigue tu audio de relajación gratuito",
             audio_btn: "Conseguir el audio"
+        },
+        contactbox: {
+            cta: "Ponte en contacto",
+            cta_irene: "Contacta con Irene",
+            sent: "Gracias, tu mensaje va de camino a Irene.",
+            title: "Ponte en contacto",
+            intro: "Escribe a Irene, o llámala directamente.",
+            name: "Tu nombre",
+            email: "Tu correo",
+            message: "Tu mensaje",
+            send: "Enviar correo",
+            phone_label: "Llamar a Irene",
+            email_label: "Correo",
+            call_label: "Llamada de descubrimiento gratuita",
+            call_value: "Reserva la hora que mejor te venga",
+            subject: "Consulta desde la web",
+            close: "Cerrar"
         },
         contact: {
             title: "Contacto",
@@ -559,7 +579,12 @@ function renderSlides() {
         const quoteText = currentLang === 'en' ? t.en : (t.es || t.en);
         const attr = currentLang === 'en' ? t.attr_en : (t.attr_es || t.attr_en);
 
-        slide.innerHTML = `<p>"${quoteText}"</p>` + (attr ? `<span class="slide-attr">${attr}</span>` : '');
+        // 1:1 credits keep the green pill; course and group ones take the magenta.
+        // Book reviewers are credited by name, not by service, so they stay green.
+        const isBook = (track.dataset.source || 'home') === 'book';
+        const isGroup = !isBook && attr ? !/1:1/.test(attr) : false;
+        slide.innerHTML = `<p>"${quoteText}"</p>`
+            + (attr ? `<span class="slide-attr${isGroup ? ' is-group' : ''}">${attr}</span>` : '');
         track.appendChild(slide);
     });
 }
@@ -786,4 +811,192 @@ function initSessionTextToggles() {
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     initSessionTextToggles();
+});
+
+/* ==========================================================================
+   Contact box (Sept 2026 request)
+   --------------------------------------------------------------------------
+   One panel, shared by every page. Anything with data-contact-open opens it:
+   the "Get in touch" button under the testimonials, the phone bubble top
+   right, and the buttons beside "Book Discovery Call".
+
+   NOTE ON SENDING: this site is static (GitHub Pages), so it has no server of
+   its own to post a form to. CONTACT_FORM_ACTION therefore points at FormSubmit,
+   which relays the message on to CONTACT_EMAIL. Set it back to null and the form
+   falls back to handing the typed message to the visitor's own mail app instead.
+   ========================================================================== */
+
+const CONTACT_EMAIL = 'irenerouragarcia@gmail.com';
+const CONTACT_PHONE_DISPLAY = '+44 7542 402290';
+const CONTACT_PHONE_TEL = '+447542402290';
+const CONTACT_CALENDLY = 'https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01';
+// FormSubmit relays the message to CONTACT_EMAIL with no account to set up. The very
+// first message sent triggers a one-click confirmation email to Irene; once she clicks
+// it, messages land in her inbox. Set this to null to fall back to the mail-app handoff.
+const CONTACT_FORM_ACTION = 'https://formsubmit.co/' + CONTACT_EMAIL;
+
+function contactStrings() {
+    const t = (translations[currentLang] && translations[currentLang].contactbox)
+        || translations.en.contactbox;
+    return t;
+}
+
+function buildContactBox() {
+    if (document.getElementById('contact-overlay')) return;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'contact-overlay';
+    overlay.id = 'contact-overlay';
+    overlay.hidden = true;
+    overlay.innerHTML = `
+        <div class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+            <button type="button" class="contact-close" data-contact-close aria-label="Close">&times;</button>
+            <h2 id="contact-title" data-i18n="contactbox.title">Get in touch</h2>
+            <p class="contact-intro" data-i18n="contactbox.intro">Send Irene a message, or call her directly.</p>
+            <form id="contact-form" novalidate>
+                <div class="contact-field">
+                    <label for="contact-name" data-i18n="contactbox.name">Your name</label>
+                    <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="contact-field">
+                    <label for="contact-email" data-i18n="contactbox.email">Your email</label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                </div>
+                <div class="contact-field">
+                    <label for="contact-message" data-i18n="contactbox.message">Your message</label>
+                    <textarea id="contact-message" name="message" required></textarea>
+                </div>
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"
+                    aria-hidden="true">
+                <button type="submit" class="contact-send" data-i18n="contactbox.send">Send email</button>
+            </form>
+            <div class="contact-alt">
+                <a class="contact-alt-row" href="tel:${CONTACT_PHONE_TEL}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span class="contact-alt-text">
+                        <span class="contact-alt-label" data-i18n="contactbox.phone_label">Call Irene</span>
+                        <span class="contact-alt-value">${CONTACT_PHONE_DISPLAY}</span>
+                    </span>
+                </a>
+                <a class="contact-alt-row" href="mailto:${CONTACT_EMAIL}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    <span class="contact-alt-text">
+                        <span class="contact-alt-label" data-i18n="contactbox.email_label">Email</span>
+                        <span class="contact-alt-value">${CONTACT_EMAIL}</span>
+                    </span>
+                </a>
+                <a class="contact-alt-row" href="${CONTACT_CALENDLY}" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                        <path d="M16 2v4M8 2v4M3 10h18"></path>
+                    </svg>
+                    <span class="contact-alt-text">
+                        <span class="contact-alt-label" data-i18n="contactbox.call_label">Free discovery call</span>
+                        <span class="contact-alt-value" data-i18n="contactbox.call_value">Book a time that suits you</span>
+                    </span>
+                </a>
+            </div>
+        </div>`;
+    document.body.appendChild(overlay);
+
+    let lastFocused = null;
+
+    function openBox() {
+        lastFocused = document.activeElement;
+        overlay.hidden = false;
+        document.body.style.overflow = 'hidden';
+        const first = overlay.querySelector('#contact-name');
+        if (first) first.focus();
+    }
+
+    function closeBox() {
+        overlay.hidden = true;
+        document.body.style.overflow = '';
+        if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    window.openContactBox = openBox;
+
+    // FormSubmit returns the visitor here with ?sent=1 once the message is away.
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+        const note = document.createElement('div');
+        note.className = 'contact-sent';
+        note.setAttribute('role', 'status');
+        note.textContent = contactStrings().sent;
+        document.body.appendChild(note);
+        setTimeout(() => note.remove(), 6000);
+        history.replaceState(null, '', window.location.pathname);
+    }
+
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('[data-contact-open]');
+        if (trigger) {
+            e.preventDefault();
+            openBox();
+            return;
+        }
+        if (e.target.closest('[data-contact-close]') || e.target === overlay) closeBox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !overlay.hidden) closeBox();
+    });
+
+    overlay.querySelector('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const form = e.target;
+        // form.name is the form's own name attribute, so reach the fields explicitly.
+        const name = form.elements.namedItem('name').value.trim();
+        const email = form.elements.namedItem('email').value.trim();
+        const message = form.elements.namedItem('message').value.trim();
+        if (!name || !email || !message) {
+            form.reportValidity();
+            return;
+        }
+        const s = contactStrings();
+        if (CONTACT_FORM_ACTION) {
+            form.action = CONTACT_FORM_ACTION;
+            form.method = 'POST';
+            // FormSubmit reads these: _subject titles the email, _captcha off skips its
+            // interstitial, _template gives a readable layout and _next is where the
+            // visitor lands once it has been sent.
+            const hidden = {
+                _subject: `${s.subject} \u2014 ${name}`,
+                _captcha: 'false',
+                _template: 'table',
+                _next: window.location.origin + window.location.pathname + '?sent=1'
+            };
+            Object.entries(hidden).forEach(([k, v]) => {
+                if (form.querySelector(`input[name="${k}"]`)) return;
+                const i = document.createElement('input');
+                i.type = 'hidden'; i.name = k; i.value = v;
+                form.appendChild(i);
+            });
+            form.submit();
+            return;
+        }
+        const subject = `${s.subject} — ${name}`;
+        const body = `${message}\n\n—\n${name}\n${email}`;
+        window.location.href = `mailto:${CONTACT_EMAIL}`
+            + `?subject=${encodeURIComponent(subject)}`
+            + `&body=${encodeURIComponent(body)}`;
+        closeBox();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    buildContactBox();
+    // The box is injected after the first updateLanguage() pass, so translate it now.
+    updateLanguage(currentLang);
 });

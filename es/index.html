@@ -41,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&amp;family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=16">
+    <link rel="stylesheet" href="../styles.css?v=32">
     <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/">
 <link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/">
@@ -97,6 +97,7 @@
                     <button class="slider-arrow next" aria-label="Next testimonial">›</button>
                 </div>
                 <a href="testimonios.html" class="quote-cards-more" data-i18n="hero.stories_link">Lee más →</a>
+                <button type="button" class="contact-cta" data-contact-open data-i18n="contactbox.cta">Ponte en contacto</button>
             </div>
         </div>
 
@@ -142,12 +143,8 @@
 
     <!-- FND Care Guide button below the hero, with the bottom logo (July 2026 request) -->
     <section class="guide-cta-band" aria-label="Guía de Cuidado TNF">
-        <!-- The two logos below flank the link text and repeat the same image, so they
-             stay alt="" (decorative): the link already reads "Guía de Cuidado TNF". -->
-        <a href="https://guiadecuidadotnf.com" target="_blank" rel="noopener" class="btn-primary guide-cta-btn">
-            <img src="../logo_hero_bottom.png" alt="" class="guide-cta-logo">
+        <a href="https://guiadecuidadotnf.com" target="_blank" rel="noopener" class="btn-guide guide-cta-btn">
             <span data-i18n="hero.tools_link">Guía de Cuidado TNF</span>
-            <img src="../logo_hero_bottom.png" alt="" class="guide-cta-logo">
         </a>
     </section>
 
@@ -161,10 +158,10 @@
         <section class="organic-section">
             <div class="content-glass">
                 <h2 data-i18n="home.intro_title">Apoyo especializado Trastorno Neurológico Funcional (TNF)</h2>
-                <div class="text-content" data-i18n="home.intro_html"><p>Soy Irene Roura García, enfermera especializada en salud mental, coach de bienestar, hipnoterapeuta y especialista en Trastorno Neurológico Funcional (TNF). Trabajé durante cuatro años en una unidad de hospitalización de neuropsiquiatría del NHS junto a personas que viven con TNF, y desde entonces sigo trabajando con esta condición.</p><p>Acompaño online a personas con TNF y a sus familiares y cuidadores, en inglés y en español, de forma individual, en grupo y a través de cursos.</p></div>
+                <div class="text-content" data-i18n="home.intro_html"><p>Soy Irene Roura García, enfermera especializada en salud mental, coach de bienestar, hipnoterapeuta y especialista en Trastorno Neurológico Funcional (TNF). Trabajé durante cuatro años en una unidad de hospitalización de neuropsiquiatría del NHS junto a personas que viven con TNF, y desde entonces sigo trabajando con esta condición.</p><p>Acompaño online a personas que viven con el TNF para que recuperen el control de su vida y reduzcan sus síntomas, en inglés y en español, de forma individual, en grupo y a través de cursos.</p></div>
 
                 <h2 data-i18n="home.work_title">Cómo puedo ayudarte</h2>
-                <div class="text-content" data-i18n="home.work_html"><p><strong>Sesiones.</strong> Sesiones individuales de coaching de bienestar, hipnoterapia y apoyo TNF, además de sesiones grupales y cursos. <a href="sesiones.html" class="highlight-link">Ver las sesiones y los precios</a>.</p><p><strong>El libro.</strong> <em>FND Care Guide</em>, escrita junto a personas que viven con TNF. Próximamente en español. <a href="libro.html" class="highlight-link">Sobre el libro</a>.</p><p><strong>La guía gratuita.</strong> Herramientas, experiencias vividas y enlaces de apoyo compartidos por la comunidad TNF. <a href="https://guiadecuidadotnf.com" target="_blank" rel="noopener" class="highlight-link">Visita guiadecuidadotnf.com</a>.</p></div>
+                <div class="text-content" data-i18n="home.work_html"><p><strong>Sesiones.</strong> Coaching individual, psicoeducación, hipnoterapia y apoyo especializado en el TNF, además de sesiones grupales y cursos. <a href="sesiones.html" class="highlight-link"><strong>Ver sesiones y precios</strong></a>.</p><p><strong>El libro.</strong> <em>FND Care Guide</em>, escrita junto a personas que viven con TNF. Próximamente en español. <a href="libro.html" class="highlight-link">Sobre el libro</a>.</p><p><strong>La guía gratuita.</strong> Herramientas, experiencias vividas y enlaces de apoyo compartidos por la comunidad TNF. <a href="https://guiadecuidadotnf.com" target="_blank" rel="noopener" class="highlight-link">Visita guiadecuidadotnf.com</a>.</p></div>
             </div>
         </section>
     </main>
@@ -177,13 +174,11 @@
         </div>
     </section>
 
-    <!-- Floating consultation button (top right, chat bubble) -->
-    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" target="_blank" rel="noopener" class="consult-fab" aria-label="Book a free consultation" title="Consultation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-        </svg>
-        <span class="consult-fab-label" data-i18n="home.consult_cta">Consulta</span>
-    </a>
+    <!-- Floating contact bubble (top right) — phone icon, opens the shared contact box -->
+    <button type="button" data-contact-open class="consult-fab" aria-label="Ponte en contacto con Irene" title="Ponte en contacto con Irene">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="consult-fab-label" data-i18n="contactbox.cta">Ponte en contacto</span>
+    </button>
 
     <div class="signup-band">
         <p data-i18n="signup.title">Recibe herramientas prácticas y amables para el TNF y las últimas novedades en tu correo</p>
@@ -266,8 +261,10 @@
         <p>© 2026 Irene Roura García. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
     </footer>
 
-    <script>localStorage.setItem('siteLang','es');</script><script src="../script.js?v=19"></script>
+    <script>localStorage.setItem('siteLang','es');</script><script src="../script.js?v=28"></script>
     <script>lucide.createIcons();</script>
+
+
 
 
 </body></html>

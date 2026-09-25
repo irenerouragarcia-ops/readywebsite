@@ -18,7 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=32">
     <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/sessions.html">
 <link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/sesiones.html">
@@ -58,19 +58,33 @@
             <div class="content-glass wide">
 
                 <h1 data-i18n="sessions.title">FND Support Sessions, Coaching and Hypnotherapy</h1>
-                <div data-i18n="sessions.intro_html" class="session-intro">
-                    <p>I offer support in a range of formats, including one-to-one sessions, regular group meetings and
-                        educational programmes.</p>
-                    <p>Below, you can find examples of some of the support packages that have worked well for other
-                        clients. Each package can be tailored to your individual needs, goals and circumstances.</p>
-                    <p>When you book your discovery call we can meet and explore the type of support that may be most
-                        helpful for you.</p>
-                </div>
+                <div data-i18n="sessions.intro_html" class="session-intro"><p>I offer support in a range of formats, including one-to-one sessions, regular support groups and educational programmes.</p><p>When you book your discovery call we can meet and explore the type of support that may be most helpful for you.</p></div>
 
-                <div class="text-content session-titles-row">
+                <!-- Display order (Sept 2026 request): FND support sessions, then Coaching,
+                     then Hypnotherapy. The offer1/2/3 keys keep their original numbering, so
+                     key order and page order deliberately differ. -->
+                    <div class="text-content session-titles-row">
+                    <div class="session-text-group">
+                        <h2 data-i18n="sessions.offer3_title" class="session-text-trigger" role="button" tabindex="0">
+                            FND support sessions</h2>
+                        <div class="session-reveal-text">
+                            <p data-i18n="sessions.offer3_text">Specialist guidance for people living with Functional
+                                Neurological Disorder. Support focused on understanding your nervous system, building
+                                confidence, reducing symptoms and regaining control.</p>
+                            <figure class="session-quote">
+                                <blockquote data-i18n="sessions.q2">The positive changes in our daughter have been
+                                    wonderful to see. She seems much calmer, more confident, and better able to manage
+                                    the challenges she faces day to day. It's rare to find someone who even knows about
+                                    FND, let alone specialises in it.</blockquote>
+                                <!-- TODO: Irene review ES translation of this quote (t4) in script.js -->
+                                <figcaption data-i18n="sessions.q2_attr">Parent of a 1:1 client</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
                     <div class="session-text-group">
                         <h2 data-i18n="sessions.offer1_title" class="session-text-trigger" role="button" tabindex="0">
-                            Wellbeing coaching</h2>
+                            Coaching</h2>
                         <div class="session-reveal-text">
                             <p data-i18n="sessions.offer1_text">Personalised sessions designed to support your wellbeing
                                 and management of symptoms, using practical, sustainable tools from mindfulness, CBT,
@@ -86,12 +100,9 @@
 
                     <div class="session-text-group">
                         <h2 data-i18n="sessions.offer2_title" class="session-text-trigger" role="button" tabindex="0">
-                            Hypnotherapy for FND</h2>
+                            Hypnotherapy</h2>
                         <div class="session-reveal-text">
-                            <p data-i18n="sessions.offer2_text">Subconscious-focused work (similar to relaxation)
-                                to reframe unhelpful patterns and support long-standing conditions and associated
-                                symptoms such as anxiety and low mood. Sessions use personalised scripts tailored to
-                                what helps you feel calm, safe, and supported.</p>
+                            <p data-i18n="sessions.offer2_text">Subconscious-focused work (similar to relaxation) to reframe unhelpful patterns, support the brain's learning processes, work towards reducing how intense and how frequent symptoms are, and build confidence. Sessions use personalised scripts tailored to what helps you feel calm, safe and supported. Many people find it especially helpful with functional seizures.</p>
                             <figure class="session-quote">
                                 <blockquote data-i18n="sessions.q1">I listen to her hypnosis every night, and it helps
                                     me feel calmer, more positive, and more in control. Over time, I've noticed that my
@@ -102,30 +113,8 @@
                             </figure>
                         </div>
                     </div>
-
-                    <div class="session-text-group">
-                        <h2 data-i18n="sessions.offer3_title" class="session-text-trigger" role="button" tabindex="0">
-                            FND support sessions</h2>
-                        <div class="session-reveal-text">
-                            <p data-i18n="sessions.offer3_text">Specialist guidance for people living with Functional
-                                Neurological Disorder. Support focused on understanding your symptoms, building
-                                confidence, and
-                                reclaiming a sense of control in your life.</p>
-                            <figure class="session-quote">
-                                <blockquote data-i18n="sessions.q2">The positive changes in our daughter have been
-                                    wonderful to see. She seems much calmer, more confident, and better able to manage
-                                    the challenges she faces day to day. It's rare to find someone who even knows about
-                                    FND, let alone specialises in it.</blockquote>
-                                <!-- TODO: Irene review ES translation of this quote (t4) in script.js -->
-                                <figcaption data-i18n="sessions.q2_attr">Parent of a 1:1 client</figcaption>
-                            </figure>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- New Session Options Grid -->
-                <!-- New Session Options Grid -->
-                <!-- New Session Options Grid -->
                 <div class="session-options-grid">
                     <div class="session-option-card expanded">
                         <div class="option-header" onclick="toggleSessionOption(this)" role="button" tabindex="0"
@@ -141,63 +130,29 @@
                                 <div class="price-item">
                                     <div class="item-details">
                                         <span class="item-name" data-i18n="sessions.opt1_item1">1 hour session</span>
-                                        <div class="item-note-small" data-i18n="sessions.opt1_item1_note">(wellbeing
-                                            coach)</div>
                                     </div>
-                                    <span class="item-price">£70</span>
-                                </div>
-                                <div class="price-item">
-                                    <div class="item-details">
-                                        <span class="item-name" data-i18n="sessions.opt1_item2">1.5 hour session +
-                                            personalized audio recording</span>
-                                        <div class="item-note-small" data-i18n="sessions.opt1_item2_note">(wellbeing
-                                            coaching + hypnotherapy)</div>
-                                    </div>
-                                    <span class="item-price">£120</span>
+                                    <span class="item-price">£85</span>
                                 </div>
                                 <div class="price-divider"></div>
-                                <h3 class="package-group-title" data-i18n="sessions.opt1_group1_title">Wellbeing
-                                    Coaching packs</h3>
+                                <h3 class="package-group-title" data-i18n="sessions.opt1_group1_title">Session packs</h3>
                                 <div class="price-item">
                                     <div class="item-details">
-                                        <span class="item-name" data-i18n="sessions.opt1_pack3">3 sessions pack</span>
-                                        <div class="item-note-small" data-i18n="sessions.opt1_pack3_note">(wellbeing
-                                            coaching)</div>
+                                        <span class="item-name" data-i18n="sessions.opt1_pack3">3 session pack</span>
                                     </div>
-                                    <span class="item-price">£180</span>
+                                    <span class="item-price">£240</span>
                                 </div>
                                 <div class="price-item">
                                     <div class="item-details">
                                         <span class="item-name" data-i18n="sessions.opt1_pack6">6 sessions pack</span>
-                                        <div class="item-note-small" data-i18n="sessions.opt1_pack6_note">(includes 1
-                                            hypnotherapy session)</div>
                                     </div>
-                                    <span class="item-price">£330</span>
+                                    <span class="item-price">£450</span>
                                 </div>
                                 <div class="price-divider"></div>
-                                <h3 class="package-group-title" data-i18n="sessions.opt1_group2_title">Coaching &amp;
-                                    Hypnotherapy Packs</h3>
-                                <div data-i18n="sessions.opt1_special_html">
-                                    <ul class="package-features">
-                                        <li>6 × 1-hour weekly sessions</li>
-                                        <li>3 hypnotherapy sessions integrated within the process</li>
-                                        <li>Handouts and resources after each session</li>
-                                        <li>2 personalised audio recordings to use between sessions and afterwards</li>
-                                    </ul>
-                                </div>
-                                <div class="price-item">
-                                    <div class="item-details">
-                                        <span class="item-name" data-i18n="sessions.opt1_special_total">Total</span>
-                                    </div>
-                                    <span class="item-price">£460</span>
-                                </div>
-                                <div class="price-divider"></div>
-                                <h3 class="package-group-title" data-i18n="sessions.opt1_group3_title">Family Packs
-                                </h3>
+                                <h3 class="package-group-title" data-i18n="sessions.opt1_group3_title">Family Packs</h3>
+                                <p class="family-pack-sub" data-i18n="sessions.opt1_family_sub">Supporting you and your
+                                    main carer or supporter.</p>
                                 <p class="family-pack-line">
-                                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01"
-                                        target="_blank" rel="noopener" class="highlight-link"
-                                        data-i18n="sessions.opt1_family_link">Get in touch to tailor yours</a>
+                                    <button type="button" class="highlight-link contact-inline-link" data-contact-open data-i18n="sessions.opt1_family_link">Get in touch</button>
                                 </p>
                             </div>
                             <p class="note" data-i18n="sessions.opt1_note">*All the sessions within the packs are one
@@ -230,7 +185,7 @@
                                     <blockquote data-i18n="sessions.q4">Every week I look forward to Wednesday. It
                                         has been so comforting to meet people who share the same condition and to feel
                                         understood — guided by Irene: warm, human, and a true professional.</blockquote>
-                                    <figcaption data-i18n="sessions.q4_attr">Group member - Patreon</figcaption>
+                                    <figcaption class="is-group" data-i18n="sessions.q4_attr">Group member - Patreon</figcaption>
                                 </figure>
                                 <p data-i18n="sessions.opt2_signup_text">You can sign up to join groups and get access
                                     to my course material via my Patreon.</p>
@@ -240,7 +195,7 @@
                                 </a>
                                 <br>
                                 <a href="https://www.patreon.com/15230186/join" target="_blank" rel="noopener"
-                                    class="btn-primary" data-i18n="sessions.opt2_patreon_btn">Join my Patreon</a>
+                                    class="btn-groups" data-i18n="sessions.opt2_patreon_btn">Join my Patreon</a>
                             </div>
                             <div class="price-divider"></div>
                             <div class="program-links">
@@ -249,7 +204,7 @@
                                         experience... Irene's soft and soothing nature and wealth of experience means
                                         you are in the right hands. This is an extremely special thing Irene has
                                         created for FND patients.</blockquote>
-                                    <figcaption data-i18n="sessions.q3_attr">Group member - Patreon</figcaption>
+                                    <figcaption class="is-group" data-i18n="sessions.q3_attr">Group member - Patreon</figcaption>
                                 </figure>
                             </div>
                             <div class="price-divider"></div>
@@ -257,8 +212,8 @@
                                 <p data-i18n="sessions.opt2_collab_text">Open to working with community groups,
                                     clinical sites and charities to deliver existing courses and programs and to
                                     develop new ones.</p>
-                                <a href="mailto:irenerouragarcia@gmail.com?subject=Courses%20%2F%20programs%20collaboration"
-                                    class="btn-primary" data-i18n="sessions.opt2_collab_btn">Get in touch</a>
+                                <button type="button" class="btn-primary collab-cta" data-contact-open
+                                    data-i18n="sessions.opt2_collab_btn">Get in touch</button>
                             </div>
                         </div>
                     </div>
@@ -273,31 +228,14 @@
                 effective — that is a clinical claim, not a web page's job.
                 -->
                 <h2 data-i18n="sessions.faq_title">Questions people often ask</h2>
-                <div class="text-content" data-i18n="sessions.faq_html">
-                    <h3>How long is a session?</h3>
-                    <p>Most sessions are one hour. There is also a longer 1.5-hour session that includes a
-                        personalised hypnotherapy audio recording for you to keep. Prices for single sessions
-                        and for packages are listed above.</p>
-                    <h3>What happens in a wellbeing coaching session?</h3>
-                    <p>We start from what is going on for you, and work with practical, sustainable tools drawn
-                        from mindfulness, CBT-informed and polyvagal-informed approaches. Sessions inside a
-                        package are weekly, and I send handouts and resources by email after each one.</p>
-                    <h3>What is a hypnotherapy session like?</h3>
-                    <p>It is subconscious-focused work, very similar to relaxation. The
-                        scripts are personalised to what helps you feel calm, safe and supported, and some
-                        sessions include a recording you can listen to at home.</p>
-                    <h3>Do you run group sessions and courses?</h3>
-                    <p>Yes — weekly closed group sessions and regular open monthly ones, plus two courses:
-                        Mindfulness for Positive Self-coaching, and FND Self-care and the Nervous System. You can
-                        join the groups and get the course material through my Patreon.</p>
-                    <h3>Can we work in Spanish, and how do we start?</h3>
-                    <p>I work in English and in Spanish. The first step is a free discovery call, where we talk
-                        about what is going on for you and what kind of support might suit you best.</p>
-                </div>
+                <div class="text-content" data-i18n="sessions.faq_html"><h3>How long is a session?</h3><p>Every session is one hour. Prices for single sessions and for packs are listed above.</p><h3>What happens in a session?</h3><p>Sessions combine coaching, psychoeducation and hypnotherapy, depending on each person's symptoms and needs. During sessions we work with practical, sustainable tools drawn from CBT-informed and polyvagal-informed approaches and mindfulness. Pack sessions are weekly, and after each one you receive an email with a session summary, handouts and resources.</p><h3>What is the hypnotherapy part like?</h3><p>It is subconscious-focused work, very similar to relaxation. The scripts are personalised to what helps you feel calm, safe and supported. Session recordings are available for an extra £25.</p><h3>Do you run group sessions and courses?</h3><p>Yes, I run weekly and monthly group sessions as well as courses. You can join the groups and get the course material through <a href="https://www.patreon.com/cw/IreneRouraGarcia/membership" target="_blank" rel="noopener" class="highlight-link">my Patreon</a>.</p><h3>Can we work in Spanish, and how do we start?</h3><p>Yes, I work in English and in Spanish. The first step is a 15 minute call, where we talk about what is going on for you and I share with you how I can help you.</p></div>
 
                 <div class="cta-container">
-                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary"
-                        target="_blank" rel="noopener" data-i18n="sessions.btn">Book Discovery Call</a>
+                    <!-- Sept 2026: the Book Discovery Call / Get in touch pair was replaced
+                         by one button. The box it opens still carries the discovery-call link,
+                         alongside the message form, the phone number and the email. -->
+                    <button type="button" class="btn-primary" data-contact-open
+                        data-i18n="contactbox.cta_irene">Contact Irene</button>
                 </div>
             </div>
 
@@ -327,7 +265,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=19"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=28"></script>
     <script>lucide.createIcons();</script>
 </body>
 

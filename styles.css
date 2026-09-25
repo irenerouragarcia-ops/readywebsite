@@ -2138,12 +2138,6 @@ a.resource-card:hover {
     font-size: 1.05rem;
 }
 
-.guide-cta-logo {
-    height: 30px;
-    width: auto;
-    display: block;
-}
-
 /* Floating consultation chat bubble, top right under the navbar */
 .consult-fab {
     position: fixed;
@@ -2342,4 +2336,406 @@ a.resource-card:hover {
 
 .community-patreon .session-quote {
     text-align: left;
+}
+
+/* ==========================================================================
+   Contact box (Sept 2026 request) — one floating panel shared by every page.
+   Opened by anything carrying data-contact-open: the "Get in touch" button
+   under the testimonials, the phone bubble top right, and the buttons beside
+   "Book Discovery Call". Markup is injected by script.js so there is only one
+   copy to keep in step. Text lives in translations.<lang>.contactbox.
+   ========================================================================== */
+
+/* The trigger under the testimonials */
+.contact-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.8rem;
+    border: 0;
+    border-radius: 30px;
+    background: var(--color-accent);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(10, 75, 72, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-cta:hover,
+.contact-cta:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(10, 75, 72, 0.35);
+}
+
+/* A quieter version for sitting next to an existing Book Discovery Call button */
+.contact-cta.secondary {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1.5px solid var(--color-accent);
+    box-shadow: none;
+}
+
+.contact-cta.secondary:hover,
+.contact-cta.secondary:focus-visible {
+    background: rgba(10, 75, 72, 0.07);
+    box-shadow: none;
+}
+
+/* Overlay + panel */
+.contact-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 4000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(18, 38, 36, 0.55);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.contact-overlay[hidden] {
+    display: none;
+}
+
+.contact-panel {
+    position: relative;
+    width: min(460px, 100%);
+    max-height: 88vh;
+    overflow-y: auto;
+    padding: 2rem 1.75rem 1.5rem;
+    border-radius: 18px;
+    background: #fdfcf7;
+    box-shadow: 0 24px 60px rgba(10, 45, 43, 0.35);
+    text-align: left;
+}
+
+.contact-panel h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+
+.contact-panel .contact-intro {
+    margin: 0 0 1.2rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.contact-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.contact-close:hover,
+.contact-close:focus-visible {
+    background: rgba(10, 75, 72, 0.1);
+}
+
+.contact-field {
+    margin-bottom: 0.85rem;
+}
+
+.contact-field label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1.5px solid rgba(10, 75, 72, 0.25);
+    border-radius: 10px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: inherit;
+}
+
+.contact-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(10, 75, 72, 0.12);
+}
+
+.contact-send {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 30px;
+    background: var(--color-accent);
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-send:hover,
+.contact-send:focus-visible {
+    filter: brightness(1.08);
+}
+
+.contact-alt {
+    margin-top: 1.3rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid rgba(10, 75, 72, 0.15);
+}
+
+.contact-alt-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.contact-alt-row:last-child {
+    margin-bottom: 0;
+}
+
+.contact-alt-row:hover .contact-alt-value,
+.contact-alt-row:focus-visible .contact-alt-value {
+    text-decoration: underline;
+}
+
+.contact-alt-row svg {
+    flex-shrink: 0;
+}
+
+.contact-alt-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.contact-alt-value {
+    font-weight: 600;
+}
+
+.contact-alt-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+    .contact-panel {
+        padding: 1.75rem 1.25rem 1.25rem;
+    }
+}
+
+/* The family-pack "Get in touch to tailor yours" is now a button, not a link:
+   keep it looking exactly like the highlight-link it replaced. */
+button.contact-inline-link {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Under the testimonials the "Get in touch" button sits on its own line,
+   centred below the "Read more" link rather than crowding beside it. */
+.quote-cards .contact-cta {
+    display: block;
+    width: fit-content;
+    margin: 2.2rem auto 0;
+}
+
+/* ==========================================================================
+   Testimonials on the About page (Sept 2026 request: "put testimonials in a
+   box, or bold, so they are more visible"). Scoped to .content-glass, which
+   is the About page's shell — the home page's testimonials live in the hero
+   and are deliberately left as they are.
+   ========================================================================== */
+.content-glass .quote-cards {
+    /* auto, not 0: this selector out-specifies .book-reviews-center on the
+       book page, and a 0 here pins those reviews to the left. */
+    margin: var(--phi-1, 2rem) auto;
+    padding: 1.6rem 1.4rem 1.3rem;
+    border: 1.5px solid rgba(10, 75, 72, 0.22);
+    border-radius: 16px;
+    background: rgba(10, 75, 72, 0.045);
+    box-shadow: 0 6px 20px rgba(10, 45, 43, 0.07);
+}
+
+.content-glass .quote-cards-header {
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    color: var(--color-accent);
+    opacity: 1;
+}
+
+.content-glass .quote-cards-more {
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Watercolour pill buttons (Sept 2026). Two washes taken from the card
+   renderer's own palette, so the site and the Instagram cards agree:
+
+     .btn-guide  purple  border #C3B6F2 · ground #F4F1FB (pl1 tint)
+     .btn-groups magenta border #C286C9 · ground #FBF3FC (Patreon, softened)
+
+   Both set in caps. The text colours are darkened relative to the borders so
+   they clear 4.5:1 on their own ground; the borders themselves are decorative.
+   These must sit after .btn-primary, which they override.
+   ========================================================================== */
+:root {
+    --wc-purple-edge: #C3B6F2;
+    --wc-purple-fill: #F4F1FB;
+    --wc-purple-ink: #5D5A80;
+    /* Softened from Patreon's own magenta, at Irene's request: the same family,
+       washed back so it sits beside the lilac rather than shouting over it. */
+    --wc-pink-edge: #C286C9;
+    --wc-pink-fill: #FBF3FC;
+    --wc-pink-ink: #8A2E90;
+}
+
+.btn-guide,
+.btn-groups,
+.guide-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.9rem;
+    border: 2px solid var(--wc-purple-edge);
+    border-radius: 34px;
+    background: var(--wc-purple-fill);
+    color: var(--wc-purple-ink);
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(93, 90, 128, 0.13);
+    transition: background 0.25s ease, border-color 0.25s ease,
+        box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.btn-guide:hover,
+.btn-guide:focus-visible,
+.guide-cta-btn:hover,
+.guide-cta-btn:focus-visible {
+    background: #fff;
+    border-color: var(--wc-purple-ink);
+    color: var(--wc-purple-ink);
+    box-shadow: 0 8px 22px rgba(93, 90, 128, 0.22);
+    transform: translateY(-2px);
+}
+
+.btn-groups {
+    border-color: var(--wc-pink-edge);
+    background: var(--wc-pink-fill);
+    color: var(--wc-pink-ink);
+    box-shadow: 0 4px 14px rgba(138, 46, 144, 0.14);
+}
+
+.btn-groups:hover,
+.btn-groups:focus-visible {
+    background: #fff;
+    border-color: var(--wc-pink-ink);
+    color: var(--wc-pink-ink);
+    box-shadow: 0 8px 22px rgba(138, 46, 144, 0.24);
+    transform: translateY(-2px);
+}
+
+/* The guide link that opens the Resources page, above the four cards */
+.resources-guide-band {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    margin: 0 auto 2.8rem;
+}
+
+/* "FND Specialist" set apart in the About page heading */
+.specialist-badge {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.35em 1.1em;
+    border: 2px solid var(--fcg-lilac);
+    border-radius: 30px;
+    background: rgba(171, 158, 253, 0.08);
+    font-size: 0.78em;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   Who said it (Sept 2026). The credit under a quote is a small pill, in two
+   colours: 1:1 work keeps the site's own green, and anything that came from a
+   course or a group takes the softened Patreon magenta, so it matches the
+   FND group sessions and Join my Patreon buttons. The .is-group modifier is
+   set by the renderers from the quote's own service field. Book reviewers are
+   named rather than credited to a service, so their pills stay green.
+   ========================================================================== */
+.testimonial-slide .slide-attr,
+.result-card .service-tag,
+.session-quote figcaption {
+    display: inline-block;
+    margin-top: 0.7rem;
+    padding: 0.3em 1em;
+    border: 1px solid var(--color-accent);
+    border-radius: 20px;
+    background: #EAF3F4;
+    color: var(--color-text-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+}
+
+.testimonial-slide .slide-attr.is-group,
+.result-card .service-tag.is-group,
+.session-quote figcaption.is-group {
+    border-color: var(--wc-pink-edge);
+    background: var(--wc-pink-fill);
+    color: var(--wc-pink-ink);
+}
+
+/* The Courses / Group Sessions filter looks like the others until it is chosen;
+   then it fills with the magenta of the tags it shows, instead of the site green. */
+.filter-btn[data-filter="group"][aria-pressed="true"] {
+    background: var(--wc-pink-ink);
+    border-color: var(--wc-pink-ink);
+    color: #fff;
 }

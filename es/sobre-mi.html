@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&amp;family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=16">
+    <link rel="stylesheet" href="../styles.css?v=32">
     <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/about.html">
 <link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/sobre-mi.html">
@@ -58,7 +58,7 @@
                 <!-- Portrait Placeholder -->
                 <img src="../irene_portrait.png" alt="Irene Roura García, FND specialist nurse and hypnotherapist" class="about-portrait">
 
-                <h1 data-i18n="about.title">Enfermera, coach e hipnoterapeuta.<br>Especialista en TNF</h1>
+                <h1 data-i18n="about.title_html">Enfermera, coach e hipnoterapeuta.<br><span class="specialist-badge">Especialista en TNF</span></h1>
 
                 <div class="text-content">
                     <!--
@@ -84,14 +84,14 @@
 
                     <h2 data-i18n="about.credentials_title">Credenciales y confianza</h2>
                     <!-- TODO: Irene verify credential wording/titles below (set in script.js, EN + ES) -->
-                    <div data-i18n="about.credentials_html"><ul class="credentials-list"><li>Enfermera, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href="../certificates/nursing-certificate.pdf" target="_blank" class="highlight-link">Certificado</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href="../certificates/hpd-nch.pdf" target="_blank" class="highlight-link">HPD — NCH</a> · <a href="../certificates/hpd-uk-academy.pdf" target="_blank" class="highlight-link">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href="https://ukfndnetwork.org/" target="_blank" rel="noopener" class="highlight-link">FND UK Network</a> — en representación del Real Colegio de Enfermería en UK</li><li>Autora del libro <a href="https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&amp;utm_medium=aboutpage" target="_blank" rel="noopener" class="highlight-link"><em>FND Care Guide</em></a></li></ul></div>
+                    <div data-i18n="about.credentials_html"><ul class="credentials-list"><li>Enfermera, especializada en Salud Mental — experiencia en el NHS en salud mental, neurología y neuropsiquiatría, etc. (<a href="../certificates/nursing-certificate.pdf" target="_blank" class="highlight-link">Registro NMC</a>)</li><li>Hipnoterapeuta (ver credenciales: <a href="../certificates/hpd-nch.pdf" target="_blank" class="highlight-link">HPD — NCH</a> · <a href="../certificates/hpd-uk-academy.pdf" target="_blank" class="highlight-link">HPD — UK Academy</a>)</li><li>Coach de bienestar</li><li>Miembro de la <a href="https://ukfndnetwork.org/" target="_blank" rel="noopener" class="highlight-link">FND UK Network</a> — en representación del Real Colegio de Enfermería en UK</li><li>Autora del libro <a href="https://fnd-care.myshopify.com/products/pre-order-fnd-care-guide-book-1st-edition?utm_source=site&amp;utm_medium=aboutpage" target="_blank" rel="noopener" class="highlight-link"><em>FND Care Guide</em></a></li></ul></div>
 
                     <h2 data-i18n="about.approach_title">Mi enfoque</h2>
-                    <div data-i18n="about.approach_html"><p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable y compasivo: primero, te escucho y te entiendo. A partir de ahí, te propongo un camino y un plan para explorar junt@s mientras avanzamos hacia la vida que quieres vivir.</p></div>
+                    <div data-i18n="about.approach_html"><p>Combino la experiencia clínica con mindfulness, prácticas informadas por la TCC y la teoría polivagal, e hipnoterapia, entre otras prácticas que apoyan la regulación del sistema nervioso y el bienestar general — siempre traducido en pasos prácticos y sostenibles, adaptados a las circunstancias, necesidades y energía de cada persona.</p><p>Mi enfoque es amable, compasivo y centrado en soluciones. Una vez que he entendido tu situación y tus objetivos, te propongo un plan para ayudarte a llegar adonde quieres estar.</p></div>
                 </div>
 
                 <div class="cta-row">
-                    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" class="btn-primary" target="_blank" rel="noopener" data-i18n="hero.cta">Reservar Llamada de Descubrimiento</a>
+                    <button type="button" class="contact-cta" data-contact-open data-i18n="contactbox.cta">Ponte en contacto</button>
                 </div>
             </div>
         </div>
@@ -108,8 +108,9 @@
         <p>© 2026 Irene Roura García. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
     </footer>
 
-    <script>localStorage.setItem('siteLang','es');</script><script src="../script.js?v=19"></script>
+    <script>localStorage.setItem('siteLang','es');</script><script src="../script.js?v=28"></script>
     <script>lucide.createIcons();</script>
+
 
 
 </body></html>

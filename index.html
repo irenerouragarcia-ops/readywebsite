@@ -27,7 +27,7 @@
           "jobTitle": "FND Specialist Nurse, Wellbeing Coach & Hypnotherapist",
           "knowsLanguage": ["en", "es", "pt"],
           "sameAs": [
-            "https://www.instagram.com/irenerouragarcia/",
+            "https://www.instagram.com/irene.roura.garcia/",
             "https://fndcareguide.com",
             "https://www.patreon.com/cw/IreneRouraGarcia"
           ]
@@ -47,7 +47,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=32">
     <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="alternate" hreflang="en" href="https://irenerouragarcia.com/">
 <link rel="alternate" hreflang="es" href="https://irenerouragarcia.com/es/">
@@ -104,6 +104,7 @@
                     <button class="slider-arrow next" aria-label="Next testimonial">›</button>
                 </div>
                 <a href="results.html" class="quote-cards-more" data-i18n="hero.stories_link">Read more →</a>
+                <button type="button" class="contact-cta" data-contact-open data-i18n="contactbox.cta">Get in touch</button>
             </div>
         </div>
 
@@ -149,12 +150,8 @@
 
     <!-- FND Care Guide button below the hero, with the bottom logo (July 2026 request) -->
     <section class="guide-cta-band" aria-label="FND Care Guide">
-        <!-- The two logos below flank the link text and repeat the same image, so they
-             stay alt="" (decorative): the link already reads "FND Care Guide". -->
-        <a href="https://fndcareguide.com" target="_blank" rel="noopener" class="btn-primary guide-cta-btn">
-            <img src="logo_hero_bottom.png" alt="" class="guide-cta-logo">
+        <a href="https://fndcareguide.com" target="_blank" rel="noopener" class="btn-guide guide-cta-btn">
             <span data-i18n="hero.tools_link">FND Care Guide</span>
-            <img src="logo_hero_bottom.png" alt="" class="guide-cta-logo">
         </a>
     </section>
 
@@ -173,15 +170,15 @@
                         hypnotherapist and an FND specialist. I spent four years on an NHS inpatient
                         neuropsychiatry ward alongside people living with Functional Neurological Disorder,
                         and I have worked with the condition ever since.</p>
-                    <p>I work online with people living with FND, and with their carers and families, in English
-                        and in Spanish, one to one, in groups, and through courses.</p>
+                    <p>I work online helping people living with FND regain control over their lives and reduce
+                        their symptoms, in English and in Spanish, one to one, in groups, and through courses.</p>
                 </div>
 
                 <h2 data-i18n="home.work_title">How I can help</h2>
                 <div class="text-content" data-i18n="home.work_html">
-                    <p><strong>Sessions.</strong> One-to-one wellbeing coaching, hypnotherapy and FND support,
-                        plus group sessions and courses. <a href="sessions.html" class="highlight-link">See the
-                            sessions and prices</a>.</p>
+                    <p><strong>Sessions.</strong> One-to-one coaching, psychoeducation, hypnotherapy and
+                        specialised FND support, plus group sessions and courses. <a href="sessions.html"
+                            class="highlight-link"><strong>See sessions and prices</strong></a>.</p>
                     <p><strong>The book.</strong> The <em>FND Care Guide</em>, written with people living with
                         FND. <a href="book.html" class="highlight-link">About the book</a>.</p>
                     <p><strong>The free FND care guide.</strong> Tools, lived experience and support links shared by
@@ -201,15 +198,11 @@
         </div>
     </section>
 
-    <!-- Floating consultation button (top right, chat bubble) -->
-    <a href="https://calendly.com/irenerouragarcia/freeconsultation?month=2026-01" target="_blank" rel="noopener"
-        class="consult-fab" aria-label="Book a free consultation" title="Consultation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-        </svg>
-        <span class="consult-fab-label" data-i18n="home.consult_cta">Consultation</span>
-    </a>
+    <!-- Floating contact bubble (top right) — phone icon, opens the shared contact box -->
+    <button type="button" data-contact-open class="consult-fab" aria-label="Get in touch with Irene" title="Get in touch with Irene">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="consult-fab-label" data-i18n="contactbox.cta">Get in touch</span>
+    </button>
 
     <div class="signup-band">
         <p data-i18n="signup.title">Get gentle, practical FND tools and latest news in your inbox</p>
@@ -293,7 +286,7 @@
         <p>&copy; 2026 Irene Roura García. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </footer>
 
-    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=19"></script>
+    <script>localStorage.setItem('siteLang','en');</script><script src="script.js?v=28"></script>
     <script>lucide.createIcons();</script>
 </body>
 
